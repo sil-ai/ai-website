@@ -8,18 +8,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'SIL AI & NLP',
   tagline: 'AI that supports people flourishing with the languages they value most',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/SIL_logo.png',
 
   // Set the production url of your site here
-  url: 'https://ai.sil.com',
+  url: 'https://sil.ainlp.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  // organizationName: 'sil-ai', // Usually your GitHub org/user name.
-  // projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'sil-ai', // Usually your GitHub org/user name.
+  projectName: 'sil-ai-website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sil-ai',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -62,24 +62,65 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/SIL_logo.png',
       navbar: {
-        title: 'SIL AI & NLP',
+        title: 'Home',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'SIL Logo',
+          src: 'img/SIL_logo.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Projects',
+            type: 'dropdown',
+            items: [
+              {
+                label: 'AQuA',
+                to: 'Projects/AQuA',
+              },
+              {
+                label: 'M2 Chat Platform',
+                to: 'Projects/chat',
+              },
+              {
+                label: 'Serval',
+                to: 'Projects/serval',
+              },
+              {
+                label: 'tools.bible',
+                to: 'Projects/bible-tools',
+              },
+            ]
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/sil-ai',
-            label: 'GitHub',
+            to: '/Research',
+            position: 'left',
+            label: 'Research',
+          },
+          {
+            to: '/Datasets',
+            position: 'left',
+            label: 'Datasets',
+          },
+          {
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left',
+          },
+          {
+            to: '/team',
+            label: 'Meet the Team',
+            position: 'left',
+          },
+          {
+            to: '/contact',
+            label: 'Contact Us',
+            position: 'left',
+          },
+          {
+            href: 'https://www.sil.org',
+            label: 'SIL',
             position: 'right',
           },
         ],
@@ -91,7 +132,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'AQuA',
                 to: '/docs/intro',
               },
             ],
@@ -121,13 +162,13 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'SIL International',
+                href: 'https://www.sil.org',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SIL International.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SIL International, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
