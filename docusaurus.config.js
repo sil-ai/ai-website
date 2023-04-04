@@ -11,15 +11,15 @@ const config = {
   favicon: 'img/SIL_logo.png',
 
   // Set the production url of your site here
-  url: 'https://sil.ainlp.org',
+  url: 'https://ai.sil.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'sil-ai', // Usually your GitHub org/user name.
-  projectName: 'sil-ai-website', // Usually your repo name.
+  // organizationName: 'sil-ai', // Usually your GitHub org/user name.
+  // projectName: 'sil-ai-website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/sil-ai',
         },
         blog: {
           showReadingTime: true,
