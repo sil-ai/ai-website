@@ -94,9 +94,19 @@ const config = {
             ]
           },
           {
-            to: '/Research',
             position: 'left',
             label: 'Research',
+            type: 'dropdown',
+            items: [
+              {
+                label: 'Speech Synthesis',
+                to: 'Research/speech-synthesis',
+              },
+              {
+                label: 'Sign Language',
+                to: 'Research/sign-language',
+              },
+            ] 
           },
           {
             to: '/Datasets',

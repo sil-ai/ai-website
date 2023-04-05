@@ -7,10 +7,8 @@ export default {
   "title": "SIL AI & NLP",
   "tagline": "AI that supports people flourishing with the languages they value most",
   "favicon": "img/SIL_logo.png",
-  "url": "https://sil.ainlp.org",
+  "url": "https://ai.sil.com",
   "baseUrl": "/",
-  "organizationName": "sil-ai",
-  "projectName": "sil-ai-website",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -26,15 +24,15 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/cweishaupt/Desktop/SIL/projects/AQuA/sil-ai-website/ai-website/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "sidebarPath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/sidebars.js",
+          "editUrl": "https://github.com/sil-ai"
         },
         "blog": {
           "showReadingTime": true,
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/cweishaupt/Desktop/SIL/projects/AQuA/sil-ai-website/ai-website/src/css/custom.css"
+          "customCss": "/home/cweishaupt/Desktop/SIL/projects/ai-website/src/css/custom.css"
         }
       }
     ]
@@ -72,9 +70,19 @@ export default {
           ]
         },
         {
-          "to": "/Research",
           "position": "left",
-          "label": "Research"
+          "label": "Research",
+          "type": "dropdown",
+          "items": [
+            {
+              "label": "Speech Synthesis",
+              "to": "Research/speech-synthesis"
+            },
+            {
+              "label": "Sign Language",
+              "to": "Research/sign-language"
+            }
+          ]
         },
         {
           "to": "/Datasets",

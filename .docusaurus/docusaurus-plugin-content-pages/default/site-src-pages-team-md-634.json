@@ -1,0 +1,7 @@
+{
+  "type": "mdx",
+  "permalink": "/team",
+  "source": "@site/src/pages/team.md",
+  "title": "Meet the team!",
+  "frontMatter": {}
+}
