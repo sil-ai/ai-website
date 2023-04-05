@@ -98,8 +98,13 @@ export default [
     exact: true
   },
   {
-    path: '/Datasets',
-    component: ComponentCreator('/Datasets', '0fa'),
+    path: '/Datasets/bloom',
+    component: ComponentCreator('/Datasets/bloom', 'f00'),
+    exact: true
+  },
+  {
+    path: '/Datasets/ebible',
+    component: ComponentCreator('/Datasets/ebible', '79c'),
     exact: true
   },
   {

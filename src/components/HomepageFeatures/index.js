@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Language is essential to human life.',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        The languages we speak or sign are at the very core of our human identity and integral 
+        to our ability to flourish in life.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'SIL International',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        SIL is a global, faith-based nonprofit that works with 
+        local communities around the world to develop language solutions that expand possibilities for a better life.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Our Vision for AI',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        We long to see people flourishing in community as the benefits of AI and Natural Language Processing (NLP) 
+        extend to local language speakers desiring to engage in the digital sphere.
       </>
     ),
   },

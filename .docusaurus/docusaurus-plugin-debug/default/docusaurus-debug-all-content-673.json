@@ -674,13 +674,6 @@
     "default": [
       {
         "type": "mdx",
-        "permalink": "/Datasets",
-        "source": "@site/src/pages/Datasets.md",
-        "title": "Read about our datasets",
-        "frontMatter": {}
-      },
-      {
-        "type": "mdx",
         "permalink": "/contact",
         "source": "@site/src/pages/contact.md",
         "title": "Contact us",
@@ -706,6 +699,20 @@
         "permalink": "/team",
         "source": "@site/src/pages/team.md",
         "title": "Meet the team!",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Datasets/bloom",
+        "source": "@site/src/pages/Datasets/bloom.md",
+        "title": "Bloom Library",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Datasets/ebible",
+        "source": "@site/src/pages/Datasets/ebible.md",
+        "title": "eBible Corpus",
         "frontMatter": {}
       },
       {

@@ -186,12 +186,19 @@
     },
     "content": "content---contact-66-c-5e3"
   },
-  "/Datasets-0fa": {
+  "/Datasets/bloom-f00": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---datasetsbe-4-9f5"
+    "content": "content---datasets-bloomb-0-e-ed6"
+  },
+  "/Datasets/ebible-79c": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---contactff-3-00d"
+    },
+    "content": "content---datasets-ebible-6-ce-6c0"
   },
   "/markdown-page-3c1": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",

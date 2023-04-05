@@ -85,9 +85,19 @@ export default {
           ]
         },
         {
-          "to": "/Datasets",
           "position": "left",
-          "label": "Datasets"
+          "label": "Datasets",
+          "type": "dropdown",
+          "items": [
+            {
+              "label": "Bloom",
+              "to": "Datasets/bloom"
+            },
+            {
+              "label": "eBible",
+              "to": "Datasets/ebible"
+            }
+          ]
         },
         {
           "to": "/blog",
