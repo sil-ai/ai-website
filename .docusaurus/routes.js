@@ -94,7 +94,7 @@ export default [
   },
   {
     path: '/contact',
-    component: ComponentCreator('/contact', '506'),
+    component: ComponentCreator('/contact', 'ff5'),
     exact: true
   },
   {
@@ -144,7 +144,7 @@ export default [
   },
   {
     path: '/team',
-    component: ComponentCreator('/team', '87e'),
+    component: ComponentCreator('/team', '6dd'),
     exact: true
   },
   {

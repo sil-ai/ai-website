@@ -1,0 +1,8 @@
+{
+  "type": "mdx",
+  "permalink": "/team",
+  "source": "@site/src/pages/team.mdx",
+  "title": "Meet the team",
+  "description": "Jake Wadsley",
+  "frontMatter": {}
+}
