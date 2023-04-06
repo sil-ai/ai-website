@@ -4,8 +4,8 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    imgSrc: require('@site/static/img/SIL_logo.png').default,
     title: 'Language is essential to human life.',
-    //Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         The languages we speak or sign are at the very core of our human identity and integral 
@@ -14,8 +14,8 @@ const FeatureList = [
     ),
   },
   {
+    imgSrc: require('@site/static/img/SIL_logo.png').default,
     title: 'SIL International',
-    //Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         SIL is a global, faith-based nonprofit that works with 
@@ -24,8 +24,8 @@ const FeatureList = [
     ),
   },
   {
+    imgSrc: require('@site/static/img/aqua_map.webp').default,
     title: 'Our Vision for AI',
-    //Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
         We long to see people flourishing in community as the benefits of AI and Natural Language Processing (NLP) 
@@ -35,19 +35,18 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({imgSrc, title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      {/* <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div> */}
       <div className="text--center padding-horiz--md">
+        <img src={imgSrc} alt={title} />
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </div>
   );
 }
+
 
 export default function HomepageFeatures() {
   return (
@@ -62,3 +61,4 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+
