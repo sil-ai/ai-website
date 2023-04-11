@@ -138,8 +138,8 @@ export default [
     exact: true
   },
   {
-    path: '/Research/sign-language',
-    component: ComponentCreator('/Research/sign-language', 'a99'),
+    path: '/Research/multimodal',
+    component: ComponentCreator('/Research/multimodal', '4f6'),
     exact: true
   },
   {

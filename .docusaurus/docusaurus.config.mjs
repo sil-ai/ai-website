@@ -80,8 +80,8 @@ export default {
               "to": "Research/speech-synthesis"
             },
             {
-              "label": "Sign Language",
-              "to": "Research/sign-language"
+              "label": "Multimodal Language Models",
+              "to": "Research/multimodal"
             }
           ]
         },

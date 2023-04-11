@@ -1,1 +1,3 @@
 # eBible Corpus
+
+More information coming soon...
