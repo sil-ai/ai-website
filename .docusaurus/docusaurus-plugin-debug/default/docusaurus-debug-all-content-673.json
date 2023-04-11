@@ -15,9 +15,9 @@
           "editUrlLocalized": "https://github.com/sil-ai/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/sidebars.js",
-          "contentPath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/docs",
-          "contentPathLocalized": "/home/cweishaupt/Desktop/SIL/projects/ai-website/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/home/daniel/go/src/github.com/sil-ai/sil-ai-website/sidebars.js",
+          "contentPath": "/home/daniel/go/src/github.com/sil-ai/sil-ai-website/docs",
+          "contentPathLocalized": "/home/daniel/go/src/github.com/sil-ai/sil-ai-website/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "intro",
@@ -697,24 +697,18 @@
       },
       {
         "type": "mdx",
+        "permalink": "/projects",
+        "source": "@site/src/pages/projects.mdx",
+        "title": "Projects",
+        "description": "Blah",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
         "permalink": "/team",
         "source": "@site/src/pages/team.mdx",
         "title": "Meet the team",
         "description": "Jake Wadsley",
-        "frontMatter": {}
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Research/sign-language",
-        "source": "@site/src/pages/Research/sign-language.md",
-        "title": "Sign Language",
-        "frontMatter": {}
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Research/speech-synthesis",
-        "source": "@site/src/pages/Research/speech-synthesis.md",
-        "title": "Speech Synthesis",
         "frontMatter": {}
       },
       {
@@ -758,6 +752,20 @@
         "permalink": "/Projects/serval",
         "source": "@site/src/pages/Projects/serval.md",
         "title": "Read about the NLP Layer here!",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Research/sign-language",
+        "source": "@site/src/pages/Research/sign-language.md",
+        "title": "Sign Language",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Research/speech-synthesis",
+        "source": "@site/src/pages/Research/speech-synthesis.md",
+        "title": "Speech Synthesis",
         "frontMatter": {}
       }
     ]

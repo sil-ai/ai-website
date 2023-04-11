@@ -74,6 +74,7 @@ const config = {
             position: 'left',
             label: 'Projects',
             type: 'dropdown',
+            to: 'projects',
             items: [
               {
                 label: 'AQuA',
@@ -162,7 +163,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SIL International, Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SIL International.`,
       },
       prism: {
         theme: lightCodeTheme,
