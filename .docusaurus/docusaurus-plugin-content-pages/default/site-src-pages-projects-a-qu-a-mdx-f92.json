@@ -2,7 +2,9 @@
   "type": "mdx",
   "permalink": "/Projects/AQuA",
   "source": "@site/src/pages/Projects/AQuA.mdx",
-  "title": "Augmented Quality Assessment (AQuA)",
-  "description": "Overview",
-  "frontMatter": {}
+  "title": "AQuA",
+  "description": "AQuA seeks to develop capacity and increase the pace of translation quality assurance. AQuA harnesses the latest",
+  "frontMatter": {
+    "title": "AQuA"
+  }
 }

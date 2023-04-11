@@ -700,8 +700,10 @@
         "permalink": "/projects",
         "source": "@site/src/pages/projects.mdx",
         "title": "Projects",
-        "description": "Blah",
-        "frontMatter": {}
+        "description": "M2 Chatbot Platform",
+        "frontMatter": {
+          "title": "Projects"
+        }
       },
       {
         "type": "mdx",
@@ -727,18 +729,37 @@
       },
       {
         "type": "mdx",
+        "permalink": "/Research/sign-language",
+        "source": "@site/src/pages/Research/sign-language.md",
+        "title": "Sign Language",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Research/speech-synthesis",
+        "source": "@site/src/pages/Research/speech-synthesis.md",
+        "title": "Speech Synthesis",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
         "permalink": "/Projects/AQuA",
         "source": "@site/src/pages/Projects/AQuA.mdx",
-        "title": "Augmented Quality Assessment (AQuA)",
-        "description": "Overview",
-        "frontMatter": {}
+        "title": "AQuA",
+        "description": "AQuA seeks to develop capacity and increase the pace of translation quality assurance. AQuA harnesses the latest",
+        "frontMatter": {
+          "title": "AQuA"
+        }
       },
       {
         "type": "mdx",
         "permalink": "/Projects/bible-tools",
         "source": "@site/src/pages/Projects/bible-tools.md",
-        "title": "Read about tools.bible here!",
-        "frontMatter": {}
+        "title": "tools.bible",
+        "description": "Tools.Bible was created (in partnership with Biblica) to offer an easy-to-use centralized library of all tools available in the Bible translation ecosystem. We have gathered data on features, capabilities, use-cases, and even testimonials from those who have first-hand experience using them on translation projects, making all that critical information searchable so that you can find the tools you need today.",
+        "frontMatter": {
+          "title": "tools.bible"
+        }
       },
       {
         "type": "mdx",
@@ -751,22 +772,11 @@
         "type": "mdx",
         "permalink": "/Projects/serval",
         "source": "@site/src/pages/Projects/serval.md",
-        "title": "Read about the NLP Layer here!",
-        "frontMatter": {}
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Research/sign-language",
-        "source": "@site/src/pages/Research/sign-language.md",
-        "title": "Sign Language",
-        "frontMatter": {}
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Research/speech-synthesis",
-        "source": "@site/src/pages/Research/speech-synthesis.md",
-        "title": "Speech Synthesis",
-        "frontMatter": {}
+        "title": "Serval",
+        "description": "The next stage of Bible Translation needs to be dramatically deprofessionalized if the remaining Scriptures are to be translated. The challenge is in determining how we might involve many more passionate people in the work while still providing technical and subject matter expert support to a broadening base of workers engaged in translation. To do this, an integrated, AI-enabled platform is needed where they can do their work, utilize the latest technology and get access to the support needed. Serval will meet translation workers at their point of need and equip developers with a common framework to provide needed expertise and help.",
+        "frontMatter": {
+          "title": "Serval"
+        }
       }
     ]
   },
