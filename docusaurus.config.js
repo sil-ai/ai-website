@@ -124,16 +124,16 @@ const config = {
               }
             ]
           },
-          {
-            to: '/blog', 
-            label: 'Blog', 
-            position: 'left',
-          },
-          {
-            to: '/team',
-            label: 'Meet the Team',
-            position: 'left',
-          },
+          // {
+          //   to: '/blog', 
+          //   label: 'Blog', 
+          //   position: 'left',
+          // },
+          // {
+          //   to: '/team',
+          //   label: 'Meet the Team',
+          //   position: 'left',
+          // },
           {
             to: '/contact',
             label: 'Contact Us',
