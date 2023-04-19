@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/Research/multimodal",
+  "source": "@site/src/pages/Research/multimodal.md",
+  "title": "Multimodal Language Models",
+  "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
+  "frontMatter": {
+    "title": "Multimodal Language Models"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/projects",
+  "source": "@site/src/pages/projects.mdx",
+  "title": "Projects",
+  "description": "M2 Chatbot Platform",
+  "frontMatter": {
+    "title": "Projects"
+  }
+}

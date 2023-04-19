@@ -149,19 +149,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'SIL International',
-                href: 'https://www.sil.org',
-              },
-            ],
-          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SIL International.`,
       },

@@ -24,7 +24,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/daniel/go/src/github.com/sil-ai/sil-ai-website/sidebars.js",
+          "sidebarPath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/sidebars.js",
           "editUrl": "https://github.com/sil-ai"
         },
         "blog": {
@@ -32,7 +32,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/daniel/go/src/github.com/sil-ai/sil-ai-website/src/css/custom.css"
+          "customCss": "/home/cweishaupt/Desktop/SIL/projects/ai-website/src/css/custom.css"
         }
       }
     ]
@@ -115,21 +115,7 @@ export default {
     },
     "footer": {
       "style": "dark",
-      "links": [
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "SIL International",
-              "href": "https://www.sil.org"
-            }
-          ]
-        }
-      ],
+      "links": [],
       "copyright": "Copyright © 2023 SIL International."
     },
     "prism": {

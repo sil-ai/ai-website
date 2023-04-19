@@ -4,157 +4,157 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '14e'),
+    component: ComponentCreator('/__docusaurus/debug', 'a98'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5e1'),
+    component: ComponentCreator('/__docusaurus/debug/config', '90e'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'ab0'),
+    component: ComponentCreator('/__docusaurus/debug/content', '9fd'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'f82'),
+    component: ComponentCreator('/__docusaurus/debug/globalData', '043'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '91d'),
+    component: ComponentCreator('/__docusaurus/debug/metadata', '5d5'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', 'c95'),
+    component: ComponentCreator('/__docusaurus/debug/registry', 'a65'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', 'b2f'),
+    component: ComponentCreator('/__docusaurus/debug/routes', '5a4'),
     exact: true
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'ed9'),
+    component: ComponentCreator('/blog', '11d'),
     exact: true
   },
   {
     path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', 'cf6'),
+    component: ComponentCreator('/blog/archive', '107'),
     exact: true
   },
   {
     path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '025'),
+    component: ComponentCreator('/blog/first-blog-post', 'ea1'),
     exact: true
   },
   {
     path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', 'd08'),
+    component: ComponentCreator('/blog/long-blog-post', '3cf'),
     exact: true
   },
   {
     path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'a64'),
+    component: ComponentCreator('/blog/mdx-blog-post', 'a42'),
     exact: true
   },
   {
     path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '7f0'),
+    component: ComponentCreator('/blog/tags', 'f1d'),
     exact: true
   },
   {
     path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '05d'),
+    component: ComponentCreator('/blog/tags/docusaurus', '25c'),
     exact: true
   },
   {
     path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', 'ef5'),
+    component: ComponentCreator('/blog/tags/facebook', '1d5'),
     exact: true
   },
   {
     path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '83e'),
+    component: ComponentCreator('/blog/tags/hello', '9a3'),
     exact: true
   },
   {
     path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', 'd32'),
+    component: ComponentCreator('/blog/tags/hola', 'db2'),
     exact: true
   },
   {
     path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', '11d'),
+    component: ComponentCreator('/blog/welcome', 'd4f'),
     exact: true
   },
   {
     path: '/contact',
-    component: ComponentCreator('/contact', 'bcb'),
+    component: ComponentCreator('/contact', 'ff5'),
     exact: true
   },
   {
     path: '/Datasets/bloom',
-    component: ComponentCreator('/Datasets/bloom', '19a'),
+    component: ComponentCreator('/Datasets/bloom', 'f00'),
     exact: true
   },
   {
     path: '/Datasets/ebible',
-    component: ComponentCreator('/Datasets/ebible', '3bd'),
+    component: ComponentCreator('/Datasets/ebible', '79c'),
     exact: true
   },
   {
     path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '75c'),
+    component: ComponentCreator('/markdown-page', '3c1'),
     exact: true
   },
   {
     path: '/projects',
-    component: ComponentCreator('/projects', '4d4'),
+    component: ComponentCreator('/projects', 'a55'),
     exact: true
   },
   {
     path: '/Projects/AQuA',
-    component: ComponentCreator('/Projects/AQuA', 'fbe'),
+    component: ComponentCreator('/Projects/AQuA', '3af'),
     exact: true
   },
   {
     path: '/Projects/bible-tools',
-    component: ComponentCreator('/Projects/bible-tools', 'dcb'),
+    component: ComponentCreator('/Projects/bible-tools', '466'),
     exact: true
   },
   {
     path: '/Projects/chat',
-    component: ComponentCreator('/Projects/chat', 'b89'),
+    component: ComponentCreator('/Projects/chat', 'cd6'),
     exact: true
   },
   {
     path: '/Projects/serval',
-    component: ComponentCreator('/Projects/serval', '2b9'),
+    component: ComponentCreator('/Projects/serval', '658'),
     exact: true
   },
   {
     path: '/Research/multimodal',
-    component: ComponentCreator('/Research/multimodal', '4f6'),
+    component: ComponentCreator('/Research/multimodal', '691'),
     exact: true
   },
   {
     path: '/Research/speech-synthesis',
-    component: ComponentCreator('/Research/speech-synthesis', 'f92'),
+    component: ComponentCreator('/Research/speech-synthesis', 'd17'),
     exact: true
   },
   {
     path: '/team',
-    component: ComponentCreator('/team', '9b5'),
+    component: ComponentCreator('/team', '6dd'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '8e4'),
+    component: ComponentCreator('/docs', '75a'),
     routes: [
       {
         path: '/docs/category/tutorial---basics',
@@ -226,7 +226,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '30d'),
+    component: ComponentCreator('/', 'cd3'),
     exact: true
   },
   {
