@@ -138,6 +138,11 @@ export default [
     exact: true
   },
   {
+    path: '/rail',
+    component: ComponentCreator('/rail', '0de'),
+    exact: true
+  },
+  {
     path: '/Research/multimodal',
     component: ComponentCreator('/Research/multimodal', '691'),
     exact: true

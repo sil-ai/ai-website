@@ -8,4 +8,4 @@ SIL recently worked with researchers from the University of Dayton and Masakhane
 
 The SIL team also trained downstream task models for various languages represented in the data, showing the viability of the data for future work in low-resource, multimodal NLP and establishing the first known baselines for these downstream tasks in certain languages (e.g., Bisu [bzi], with an estimated population of 700 users). Some of these first-of-their-kind baselines are comparable to state-of-the-art performance for higher-resourced languages. 
 
-The Bloom Library datasets are released under Creative Commons licenses on the Hugging Face datasets hub to catalyze more linguistically diverse research in the included downstream tasks. You can find the datasets [here](https://huggingface.co/sil-ai).
+The Bloom Library datasets are released under Creative Commons licenses on the Hugging Face datasets hub to catalyze more linguistically diverse research in the included downstream tasks. You can find the datasets [here](https://huggingface.co/sil-ai). We have released some models trained on this data, which are released under the [SIL RAIL-M](../rail) License.
