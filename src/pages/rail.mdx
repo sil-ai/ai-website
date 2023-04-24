@@ -1,2 +1,133 @@
-# RAIL-M License
+# SIL RAIL-M License v1.0
+
+This is a license (the “**License**”) between you (“**You**”) and SIL International (“**Licensor**”). 
+This Responsible AI License ([RAIL](https://www.licenses.ai/)) aims at SIL’s goal of working openly and permissively while striving 
+for responsible use of the **Model**.
+
+
+
+### Section I: PREAMBLE
+
+The lack of freely-available, pre-trained Natural Language Processing (“**NLP**”) models in the majority of the world’s languages 
+is concerning, and there is a need to greatly expand the linguistic diversity represented in mainstream **NLP** research. 
+However, the release of open access models and datasets representing **Indigenous People** can also backfire into exploitation 
+of or discrimination against these same communities. 
+
+This RAIL-M License, created by SIL International, strives to facilitate the public release of **NLP** models representing 
+indigenous languages while safeguarding against downstream usage that might harm those in indigenous communities.
+
+As it relates to access, distribution, and general responsible use, we took inspiration from Open RAIL-M licenses, 
+such as the CreativeML Open RAIL-M license. The notable difference here 
+(which shifts the current license into a RAIL-M category rather than an Open RAIL-M category) 
+is a restriction on downstream commercial use of the **Model**. This use restriction is meant to prevent exploitative downstream use 
+without any clear benefits flowing back to indigenous communities. 
+
+Further, we introduce use-based restrictions not permitting the use of the **Model** in scenarios that would harm 
+or enable discrimination against **Indigenous People** as outlined in Articles 2; 13-16; and 31 of the United Nations Declaration 
+on the Rights of Indigenous People.
+
+This License governs the use of the **Model** (and its derivatives) and is informed by the Model card associated with the **Model**. 
+Publicly released derivative versions of the **Model** will always have to include - at minimum - the same use-based restrictions 
+as the ones in the original license (this license).
+
+**NOW THEREFORE**, **You** and **Licensor** agree as follows:
+
+**1. Definitions**
+<ol type="a">
+  <li>"<b>License</b>" means the terms and conditions for use, reproduction, and Distribution as defined in this document.</li>
+  <li>“<b>Data</b>” means a collection of information and/or content extracted from the dataset used with the Model, including 
+  to train, pretrain, or otherwise evaluate the Model. The Data is not licensed under this License.</li>
+  <li>“<b>Output</b>” means the results of operating a Model as embodied in informational content resulting therefrom.</li>
+  <li>“<b>Model</b>” means any accompanying machine-learning based assemblies (including checkpoints), consisting of learnt weights, 
+  parameters (including optimizer states), corresponding to the model architecture as embodied in the Complementary Material, 
+  that have been trained or tuned, in whole or in part on the Data, using the Complementary Material.</li>
+  <li>“<b>Derivatives of the Model</b>” means all modifications to the Model, works based on the Model, or any other model which 
+  is created or initialized by transfer of patterns of the weights, parameters, activations or output of the Model, 
+  to the other model, in order to cause the other model to perform similarly to the Model, including - but not limited to - 
+  distillation methods entailing the use of intermediate data representations or methods based on the generation of synthetic data 
+  by the Model for training the other model.</li>
+  <li>“<b>Complementary Material</b>” means the accompanying source code and scripts used to define, run, load, benchmark or 
+  evaluate the Model, and used to prepare data for training or evaluation, if any. This includes any accompanying documentation, 
+  tutorials, examples, etc, if any.</li>
+  <li> “<b>Distribution</b>” means any transmission, reproduction, publication or other sharing of the Model or Derivatives of the Model 
+  to a third party, including providing the Model as a hosted service made available by electronic or other remote means - e.g. 
+  API-based or web access.</li>
+  <li>“<b>Licensor</b>” means the copyright owner or entity authorized by the copyright owner that is granting the License, 
+  including the persons or entities that may have rights in the Model and/or distributing the Model.</li>
+  <li>“<b>You</b>” (or “<b>Your</b>”) means an individual or Legal Entity exercising permissions granted by this License and/or 
+  making use of the Model for whichever purpose and in any field of use, including usage of the Model in an end-use application 
+  - e.g. chatbot, translator, image generator.</li>
+  <li>“<b>Third Parties</b>” means individuals or legal entities that are not under common control with Licensor or You.</li>
+  <li>“<b>Contribution</b>” means any work of authorship, including the original version of the Model and any modifications or 
+  additions to that Model or Derivatives of the Model thereof, that is intentionally submitted to Licensor for inclusion in 
+  the Model by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. 
+  For the purposes of this definition, “submitted” means any form of electronic, verbal, or written communication sent to the 
+  Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control 
+  systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and 
+  improving the Model, but excluding communication that is conspicuously marked or otherwise designated in writing by the 
+  copyright owner as "Not a Contribution."</li>
+  <li>“<b>Contributor</b>” means Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received 
+  by Licensor and subsequently incorporated within the Model.</li>
+  <li>“<b>Indigenous People</b>” means, in accordance with The UN Declaration on the Rights of Indigenous Peoples, any group 
+  of people that self-identifies as indigenous in accordance with their customs and traditions. By way of example and 
+  without limitation, Indigenous People may include: (i) tribal peoples in independent countries whose social, cultural and 
+  economic conditions distinguish them from other sections of the national community and whose status is regulated wholly or 
+  partially by their own customs or traditions or by special laws or regulations; (ii) peoples in independent countries who regard 
+  themselves and are regarded by others as indigenous on account of their descent from the populations which inhabited the country, 
+  or a geographical region to which the country belongs, at the time of conquest or colonization or the establishment of present 
+  state boundaries and who irrespective of their legal status, retain some or all of their own social, economic, cultural and 
+  political institutions; (iii) peoples otherwise described by i and/or ii who have been forcefully displaced from their country of
+  origin or those who traditionally have maintained and continue to maintain a nomadic or itinerant lifestyle.</li>
+  <li>“<b>Commercial Use</b>” means any use of the Model, Derivatives of the Model and Complementary Material primarily intended 
+  for or directed toward commercial advantage or monetary compensation.</li>
+  <li>“<b>Natural Language</b>” means spoken, signed, or written communication as used by a community of people in their daily life 
+  and for their own purposes.</li>
+  <li>“<b>Natural Language Processing</b>” (or “NLP”) means machine or computer methods (often a Model) that allow computers to understand 
+  and communicate using Natural Language</li>
+</ol>
+
+
+
+### **Section II: INTELLECTUAL PROPERTY RIGHTS**
+
+Both copyright and patent grants apply to the Model, Derivatives of the Model and Complementary Material. 
+The Model and Derivatives of the Model are subject to additional terms as described in Section III.
+
+**2. Grant of Copyright License**
+Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, 
+no-charge, royalty-free, irrevocable copyright license to reproduce, prepare, publicly display, publicly perform, sublicense, 
+and distribute the Complementary Material, the Model, and Derivatives of the Model.
+
+**3. Grant of Patent License**
+Subject to the terms and conditions of this License and where and as applicable, each Contributor hereby grants to You a perpetual, 
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this paragraph) patent license to make, 
+have made, use, import, and otherwise transfer the Model and the Complementary Material, where such license applies only to those 
+patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of 
+their Contribution(s) with the Model to which such Contribution(s) was submitted. If You institute patent litigation against any 
+entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Model and/or Complementary Material or a 
+Contribution incorporated within the Model and/or Complementary Material constitutes direct or contributory patent infringement, 
+then any patent licenses granted to You under this License for the Model and/or Work shall terminate as of the date such litigation 
+is asserted or filed.
+
+
+### **Section III: CONDITIONS OF USAGE, DISTRIBUTION AND REDISTRIBUTION**
+
+**4. Distribution and Redistribution**
+
+**5. Use-Based Restrictions**
+
+**6. The Output you Generate**
+
+**7. Updates and Runtime Restrictions**
+
+**8. Trademarks and Related**
+
+**9. Disclaimer of Warranty**
+
+**10. Limitation of Liability**
+
+**11. Accepting Warranty or Additional Liability**
+
+**12.**
+
 
