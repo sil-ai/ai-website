@@ -135,7 +135,8 @@ const config = {
           //   position: 'left',
           // },
           {
-            to: '/contact',
+            //to: '/contact',
+            to: 'https://bfppcbtg.fwcrmsites.com?redirectParent=true',
             label: 'Contact Us',
             position: 'left',
           },
