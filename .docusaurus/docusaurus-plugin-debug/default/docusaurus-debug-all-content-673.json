@@ -673,14 +673,6 @@
   "docusaurus-plugin-content-pages": {
     "default": [
       {
-        "type": "mdx",
-        "permalink": "/contact",
-        "source": "@site/src/pages/contact.mdx",
-        "title": "Contact us",
-        "description": "If you are interested in learning more about AQuA, Serval, the M2 Chat Platform, or any of the other things",
-        "frontMatter": {}
-      },
-      {
         "type": "jsx",
         "permalink": "/",
         "source": "@site/src/pages/index.js"

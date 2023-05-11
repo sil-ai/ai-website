@@ -93,11 +93,6 @@ export default [
     exact: true
   },
   {
-    path: '/contact',
-    component: ComponentCreator('/contact', 'ff5'),
-    exact: true
-  },
-  {
     path: '/Datasets/bloom',
     component: ComponentCreator('/Datasets/bloom', 'f00'),
     exact: true
