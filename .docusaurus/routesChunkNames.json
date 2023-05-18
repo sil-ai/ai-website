@@ -179,87 +179,101 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
+  "/contact-ff5": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---datasets-bloomff-3-4e5"
+    },
+    "content": "content---contactbb-9-b35"
+  },
+  "/contact_code-320": {
+    "__comp": "__comp---site-src-pages-contact-code-jsxde-1-5d2",
+    "__context": {
+      "plugin": "plugin---datasets-bloomff-3-4e5"
+    },
+    "config": "config---5-e-9-4f3"
+  },
   "/Datasets/bloom-f00": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---datasets-bloomb-0-e-ed6"
   },
   "/Datasets/ebible-79c": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---datasets-ebible-6-ce-6c0"
   },
   "/markdown-page-3c1": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---markdown-page-393-028"
   },
   "/projects-a55": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---projects-127-374"
   },
   "/Projects/AQuA-3af": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---projects-a-qu-af-92-c9b"
   },
   "/Projects/bible-tools-466": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---projects-bible-tools-728-b00"
   },
   "/Projects/chat-cd6": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---projects-chatba-9-87d"
   },
   "/Projects/serval-658": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---projects-servalc-2-c-a1b"
   },
   "/rail-0de": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---rail-5-c-3-746"
   },
   "/Research/multimodal-691": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---research-multimodale-27-168"
   },
   "/Research/speech-synthesis-d17": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---research-speech-synthesis-104-2bd"
   },
   "/team-6dd": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "content": "content---team-804-a8b"
   },
@@ -317,7 +331,7 @@
   "/-cd3": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "plugin---contactff-3-00d"
+      "plugin": "plugin---datasets-bloomff-3-4e5"
     },
     "config": "config---5-e-9-4f3"
   }

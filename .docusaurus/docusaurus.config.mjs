@@ -101,7 +101,7 @@ export default {
           ]
         },
         {
-          "to": "https://bfppcbtg.fwcrmsites.com?redirectParent=true",
+          "to": "/contact",
           "label": "Contact Us",
           "position": "left"
         },
