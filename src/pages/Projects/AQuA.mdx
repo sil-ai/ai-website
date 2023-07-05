@@ -4,12 +4,13 @@ title: AQuA
 
 # Augmented Quality Assessment (AQuA)
 
-AQuA seeks to develop capacity and increase the pace of translation quality assurance. AQuA harnesses the latest 
-artificial intelligence (AI) techniques to assist human reviewers in objectively assessing multiple facets of 
-translation quality. AQuA is able to produce an increasingly detailed suite of quality-related diagnostics, with at 
-least five augmented quality assessment methods in the areas of accuracy, clarity, and naturalness. 
+### What is AQuA?
 
-AQuA helps to develop capacity and increase the pace of Bible translation while ensuring quality throughout the translation community.
+AQuA is tool that seeks to develop capacity and increase the pace of translation quality assurance. AQuA harnesses the latest 
+artificial intelligence (AI) techniques to assist human reviewers in objectively assessing multiple facets of 
+translation quality. AQuA is able to produce an increasingly detailed suite of quality-related diagnostics, with several augmented quality assessment methods in the areas of accuracy, clarity, and naturalness. 
+
+AQuA helps to develop capacity and increase the pace of Bible translation while ensuring quality throughout the translation community by enhancing and complementing the hard work done by translation teams.
 
 To this end, AQuA is creating:
 
@@ -20,5 +21,131 @@ To this end, AQuA is creating:
 By identifying possibly problematic or anomalous passages in a draft, AQuA accelerates the quality assessment process by helping:
 
 - translators make corrections (and produce an improved draft) prior to consultant checks;
-- consultants gain an “at-a-glance” understand of quality across a draft and quickly dig into the relevant, granular quality issues; and
+- consultants gain an “at-a-glance” understanding of quality across a draft and quickly dig into the relevant, granular quality issues; and
 - administrators and project managers track quality across projects to guide strategic allocations of checking resources.
+
+### Methods of Assessment 
+
+AQuA currently offers four methods of assessment in the areas of accuracy, naturalness, and clarity, with two more set to be released in the coming months:
+
+#### Accuracy
+
+<details>
+  <summary><h5>Formal Equivalence</h5></summary>
+
+The Formal Equivalence assessment gives insight into how formally equivalent or dynamic a draft translation is in comparison to a reference. 
+
+ <h6>How it works:</h6>
+ In general, formal equivalence scores are a measure of AQuA’s confidence in its ability to align functionally equivalent words between a draft and a source. 
+ We call the act of aligning these words "word correspondence". 
+ Our word correspondence algorithm works in several steps. First, we use a variety of computational techniques to align corresponding words between the draft text and the source. 
+ We employ three algorithms for word correspondence: 
+ <ul>
+ <li>Fast Align (the same algorithm used in the Paratext Interlinearizer)</li>
+ <li>The "Match Algorithm", which aligns words based on their verse co-occurences (we return the <a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard Similarity</a> of the two words)</li>
+ <li>An AI autoencoder model that yields high-dimensional embeddings of two words. We then return the <a href="https://en.wikipedia.org/wiki/Cosine_similarity">Cosine Similarity</a> of these two vectors.</li>
+ </ul>
+
+ Each of these algorithms gives a score representing the confidence of a given word alignment. 
+ As a result, we now have a very long list of plausible word alignment pairs between the draft and the source for every verse, and a confidence score for that alignment.  
+
+ Dynamicity scores are calculated by taking the average alignment score for each word in the source text. 
+ Higher alignment scores mean that the algorithm was more easily able to align source words with target words, and therefore the source and target texts are likely more formally equivalent. 
+ Lower average alignment scores mean that the words are more difficult to align, and therefore the translation is probably less formally equivalent.
+
+ We tokenize words by whitespace, so the Formal Equivalence assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
+ as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages. 
+
+</details>
+
+<details>
+  <summary><h5>Missing Words</h5></summary>
+
+ The Missing Words assessment identifies words from a source text that may be missing from a draft. 
+
+ <h6>How it works:</h6>
+ To identify potential missing words, we build off of the word alignments generated from the Formal Equivalence assessment. 
+ After running the word correspondence algorithm between the draft and source translations, we then run it again between the source translation and several other reference translations. 
+ Finally, we compare the scores across the assessments.
+
+ Words in the source translation that have a low alignment score with regards to the draft but have a high alignment score with at least one word in each of the other reference translations 
+ are flagged as potentially missing from the draft. In other words, if the algorithm can find a likely match for a given word in a given verse between the source and a target word in  several references, 
+ but not between the source and the draft, that word in the source likely doesn't have an equivalent in the draft. 
+
+ We tokenize words by whitespace, so the Missing Words assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
+ as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages. 
+
+</details>
+
+<details>
+  <summary><h5>Added Words (Coming Soon)</h5></summary>
+
+  The Added Words assessment identifies words from a source text that may be missing from a draft. 
+
+  <h6>How it works:</h6>
+  The process for identifying potential added words is very similar to identifying missing words. 
+  After running word correspondence between the draft and the source, the algorithm selects the highest confidence score associated with each target word for each verse. 
+  If a particular high score falls below a specified threshold (e.g., 0.1), it is flagged as a potential added word, indicating that the corresponding word may not exist in the source text. 
+  Unlike the Missing Words assessment, the Added Words assessment does not involve comparing the correspondence scores with reference translations, 
+  since added words are specific to the target text being analyzed and would not be expected to appear in other translations.
+
+  We tokenize words by whitespace, so the Missing Words assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
+  as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages. 
+
+</details>
+
+<details>
+  <summary><h5>Semantic Similarity</h5></summary>
+
+ The Semantic Similarity assessment measures the difference in meaning between a back translation[^1] of a draft and a reference translation (usually the source translation). 
+ This assessment can show us where the meaning of the two passages is very similar, even if they use completely different words, as well as where the meanings are very different, even if they use very similar words.
+
+ <h6>How it works:</h6>
+ We use Google's Language Agnostic BERT Sentence Embeddings (LaBSE) model to assign a score from 0 (most different) to 10 (most similar) to each verse and chapter pair. 
+ You can read more about the LaBSE model <a href="https://ai.googleblog.com/2020/08/language-agnostic-bert-sentence.html">here</a>, or read the model paper <a href="https://arxiv.org/abs/2007.01852">here</a>.
+
+ [^1]: For best results the back/reference translations should be in a language of wider communication. However, good results have been observed when assessing languages closely related to a LWC.  For example, Modern Standard Arabic is a LWC, so an assessment of an Egyptian Arabic translation still yields useful results.
+
+</details>
+
+#### Naturalness
+
+<details>
+  <summary><h5>Lix Readability</h5></summary>
+
+  The Lix Readability Assessment uses a simple formula, the Lix readability metric, as a proxy for the readability of a text by taking into account word and sentence length.
+  
+  <h6>How it works:</h6> 
+  Lix is a readability formula based on word and sentence length of a text. 
+  Because it does not take syllables into account, it works better for non-English languages than other readability metrics like Flesch Kincaid. 
+  
+  The Lix formula is as follows:
+
+  <p><em>% of long words in the text + average words per sentence in the text</em></p>
+  where a word is classified as "long" if it contains a certain number of letters (for our purposes, greater than 7 letters). 
+
+  Lix readability works best for languages written with an alphabetic script, with whitespace at word boundaries. It does not take into account word choice or syntax, which also factor into a text's readability. 
+  We are exploring opportunities to enhance the assessment by developing a more comprehensive and multilingual measure of readability with deep learning. 
+  This approach will take into account the unique characteristics and readability standards of various diverse languages, ensuring a more accurate and contextually relevant evaluation.
+
+</details>
+
+#### Clarity
+
+<details>
+  <summary><h5>Comprehensibility (Coming Soon)</h5></summary>
+
+  The Comprehensibility assessment focuses on evaluating the understandability and completeness of information in the target text.
+
+  <h6>How it works:</h6>
+  This assessment incorporates machine-generated question-answer pairs that correspond to the expected information within each verse. 
+  It requires a back translation of the draft text into a language of wider communication. 
+
+  Using a question-answering model, we provide the verse text as context and pose the corresponding question to the model. 
+  We then compare the model's answer to the expected answer from the question-answer pair. 
+  If the model's answer differs significantly from the expected answer, it suggests the possibility of missing or incomplete information within the verse.
+
+</details>
+
+### Contact Us
+We are currently piloting AQuA in a small number of Bible Translation field trials. If you are interested in being a test user, please fill out this [contact form](../../contact). 
