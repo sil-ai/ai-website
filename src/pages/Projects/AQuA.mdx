@@ -6,11 +6,9 @@ title: AQuA
 
 ### What is AQuA?
 
-AQuA is tool that seeks to develop capacity and increase the pace of translation quality assurance. AQuA harnesses the latest 
-artificial intelligence (AI) techniques to assist human reviewers in objectively assessing multiple facets of 
-translation quality. AQuA is able to produce an increasingly detailed suite of quality-related diagnostics, with several augmented quality assessment methods in the areas of accuracy, clarity, and naturalness. 
-
-AQuA helps to develop capacity and increase the pace of Bible translation while ensuring quality throughout the translation community by enhancing and complementing the hard work done by translation teams.
+AQuA is a tool developed by SIL International that seeks to develop capacity and increase the pace of translation quality assurance. It harnesses the latest 
+artificial intelligence (AI) techniques, assisting human reviewers in objectively assessing multiple facets of 
+translation quality by enhancing and complementing preexisting translation work. AQuA is able to produce an increasingly detailed suite of quality-related diagnostics, with several augmented quality assessment methods in the areas of accuracy, clarity, and naturalness. 
 
 To this end, AQuA is creating:
 
@@ -33,27 +31,28 @@ AQuA currently offers four methods of assessment in the areas of accuracy, natur
 <details>
   <summary><h5>Formal Equivalence</h5></summary>
 
-The Formal Equivalence assessment gives insight into how formally equivalent or dynamic a draft translation is in comparison to a reference. 
+The formal equivalence assessment gives insight into how formally equivalent or dynamic a draft translation is in comparison to a reference. 
 
  <h6>How it works:</h6>
- In general, formal equivalence scores are a measure of AQuA’s confidence in its ability to align functionally equivalent words between a draft and a source. 
+ Formal equivalence scores are a measure of AQuA’s confidence in its ability to align functionally equivalent words between a draft and a reference. 
  We call the act of aligning these words "word correspondence". 
- Our word correspondence algorithm works in several steps. First, we use a variety of computational techniques to align corresponding words between the draft text and the source. 
+ Our word correspondence algorithm works in several steps. First, we use a variety of computational techniques to align corresponding words between the two texts. 
  We employ three algorithms for word correspondence: 
  <ul>
  <li>Fast Align (the same algorithm used in the Paratext Interlinearizer)</li>
- <li>The "Match Algorithm", which aligns words based on their verse co-occurences (we return the <a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard Similarity</a> of the two words)</li>
- <li>An AI autoencoder model that yields high-dimensional embeddings of two words. We then return the <a href="https://en.wikipedia.org/wiki/Cosine_similarity">Cosine Similarity</a> of these two vectors.</li>
+ <li>The "Match Algorithm", which aligns words based on their verse co-occurences</li>
+ <li>Comparison of high-dimenstional word embeddings produced by an AI autoencoder model</li>
  </ul>
 
- Each of these algorithms gives a score representing the confidence of a given word alignment. 
- As a result, we now have a very long list of plausible word alignment pairs between the draft and the source for every verse, and a confidence score for that alignment.  
+ Each of these techniques gives a score representing the confidence of a given word alignment. 
+ We now have a list of plausible word alignment pairs between the draft and the reference, and a confidence score for each alignment.  
 
- Dynamicity scores are calculated by taking the average alignment score for each word in the source text. 
- Higher alignment scores mean that the algorithm was more easily able to align source words with target words, and therefore the source and target texts are likely more formally equivalent. 
- Lower average alignment scores mean that the words are more difficult to align, and therefore the translation is probably less formally equivalent.
+ Correspondence scores are calculated by averaging out the different scores produced by the above algorithms for each word. 
+ We get the dynamicity score for a specific verse by averaging over the dynamicity scores for each word in the verse.
+ Higher dynamicity scores mean that the algorithm was more easily able to align draft words with reference words, and therefore the two texts are likely more formally equivalent. 
+ Lower dynamicity scores mean that the words are more difficult to align, and therefore the translations are probably less formally equivalent.
 
- We tokenize words by whitespace, so the Formal Equivalence assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
+ We tokenize words by whitespace, so the formal equivalence assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
  as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages. 
 
 </details>
@@ -61,43 +60,43 @@ The Formal Equivalence assessment gives insight into how formally equivalent or 
 <details>
   <summary><h5>Missing Words</h5></summary>
 
- The Missing Words assessment identifies words from a source text that may be missing from a draft. 
+ The missing words assessment identifies words from a source text that may be missing from a draft. 
 
  <h6>How it works:</h6>
- To identify potential missing words, we build off of the word alignments generated from the Formal Equivalence assessment. 
+ <p>To identify potential missing words, we build off of the word alignments generated from the formal equivalence assessment. 
  After running the word correspondence algorithm between the draft and source translations, we then run it again between the source translation and several other reference translations. 
- Finally, we compare the scores across the assessments.
+ Finally, we compare the scores across the assessments.</p>
 
- Words in the source translation that have a low alignment score with regards to the draft but have a high alignment score with at least one word in each of the other reference translations 
- are flagged as potentially missing from the draft. In other words, if the algorithm can find a likely match for a given word in a given verse between the source and a target word in  several references, 
- but not between the source and the draft, that word in the source likely doesn't have an equivalent in the draft. 
+ <p>Words in the source translation that have a low correspondence score with regards to the draft but have a high alignment score with at least one word in each of the other reference translations 
+ are flagged as potentially missing from the draft. In other words, if the algorithm can find a likely match for a given word in a given verse between the source and a target word in several references, 
+ but not between the source and the draft, that word in the source likely doesn't have an equivalent in the draft.</p>
 
- We tokenize words by whitespace, so the Missing Words assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
- as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages. 
+ <p>We tokenize words by whitespace, so the missing words assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
+ as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages.</p> 
 
 </details>
 
 <details>
   <summary><h5>Added Words (Coming Soon)</h5></summary>
 
-  The Added Words assessment identifies words from a source text that may be missing from a draft. 
+  The added words assessment identifies words that exist in a draft but have no likely equivalent in a source. 
 
   <h6>How it works:</h6>
-  The process for identifying potential added words is very similar to identifying missing words. 
-  After running word correspondence between the draft and the source, the algorithm selects the highest confidence score associated with each target word for each verse. 
-  If a particular high score falls below a specified threshold (e.g., 0.1), it is flagged as a potential added word, indicating that the corresponding word may not exist in the source text. 
-  Unlike the Missing Words assessment, the Added Words assessment does not involve comparing the correspondence scores with reference translations, 
-  since added words are specific to the target text being analyzed and would not be expected to appear in other translations.
+  <p>The process for identifying potential added words is very similar to identifying missing words. 
+  First, we run word correspondence between the draft and the source texts. 
+  Each word in each verse in the draft gets paired with its most likely equivalent word in the source by choosing the alignment with the highest correspondence score.
+  If the correspondence score for one of these "most likely" word pairs falls below a specified threshold (e.g., 0.1), it is flagged as a potential added word, 
+  indicating that the corresponding word may not exist in the source text.</p>
 
-  We tokenize words by whitespace, so the Missing Words assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
-  as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages. 
+  <p>We tokenize words by whitespace, so the added words assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
+  as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages.</p>
 
 </details>
 
 <details>
   <summary><h5>Semantic Similarity</h5></summary>
 
- The Semantic Similarity assessment measures the difference in meaning between a back translation[^1] of a draft and a reference translation (usually the source translation). 
+ The semantic similarity assessment measures the difference in meaning between a back translation[^1] of a draft and a reference translation. 
  This assessment can show us where the meaning of the two passages is very similar, even if they use completely different words, as well as where the meanings are very different, even if they use very similar words.
 
  <h6>How it works:</h6>
@@ -113,20 +112,19 @@ The Formal Equivalence assessment gives insight into how formally equivalent or 
 <details>
   <summary><h5>Lix Readability</h5></summary>
 
-  The Lix Readability Assessment uses a simple formula, the Lix readability metric, as a proxy for the readability of a text by taking into account word and sentence length.
+  The Lix readability assessment uses a simple formula, the Lix readability metric, as a proxy for the readability of a text.
   
   <h6>How it works:</h6> 
-  Lix is a readability formula based on word and sentence length of a text. 
-  Because it does not take syllables into account, it works better for non-English languages than other readability metrics like Flesch Kincaid. 
+  <p>Lix is a readability formula based on word and sentence length of a text. 
+  Lix works better for estimating the readability of non-English text than other readability metrics like Flesch Kincaid, which contain English-specific metrics.</p>
   
-  The Lix formula is as follows:
-
-  <p><em>% of long words in the text + average words per sentence in the text</em></p>
-  where a word is classified as "long" if it contains a certain number of letters (for our purposes, greater than 7 letters). 
-
-  Lix readability works best for languages written with an alphabetic script, with whitespace at word boundaries. It does not take into account word choice or syntax, which also factor into a text's readability. 
+  The Lix readability formula is as follows:<br/>
+  <em>% of long words in the text + average words per sentence in the text</em>{"\n"}<br/>
+  where a word is classified as "long" if it contains a certain number of letters (for our purposes, greater than 7 letters).
+  <p></p>
+  <p>Lix readability works best for languages written with an alphabetic script, with whitespace at word boundaries. It does not take into account word choice or syntax, which also factor into a text's readability. 
   We are exploring opportunities to enhance the assessment by developing a more comprehensive and multilingual measure of readability with deep learning. 
-  This approach will take into account the unique characteristics and readability standards of various diverse languages, ensuring a more accurate and contextually relevant evaluation.
+  This approach will take into account the unique characteristics and readability standards of various diverse languages, ensuring a more accurate and contextually relevant evaluation.</p>
 
 </details>
 
@@ -135,7 +133,7 @@ The Formal Equivalence assessment gives insight into how formally equivalent or 
 <details>
   <summary><h5>Comprehensibility (Coming Soon)</h5></summary>
 
-  The Comprehensibility assessment focuses on evaluating the understandability and completeness of information in the target text.
+  The comprehensibility assessment focuses on evaluating the understandability and completeness of information in the target text.
 
   <h6>How it works:</h6>
   This assessment incorporates machine-generated question-answer pairs that correspond to the expected information within each verse. 
