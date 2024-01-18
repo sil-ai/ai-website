@@ -61,7 +61,7 @@ export default {
               "to": "Projects/chat"
             },
             {
-              "label": "Serval",
+              "label": "Serval / Scripture Forge",
               "to": "Projects/serval"
             },
             {
@@ -116,7 +116,7 @@ export default {
     "footer": {
       "style": "dark",
       "links": [],
-      "copyright": "Copyright © 2023 SIL International."
+      "copyright": "Copyright © 2024 SIL International."
     },
     "prism": {
       "theme": {

@@ -85,7 +85,7 @@ const config = {
                 to: 'Projects/chat',
               },
               {
-                label: 'Serval',
+                label: 'Serval / Scripture Forge',
                 to: 'Projects/serval',
               },
               {
