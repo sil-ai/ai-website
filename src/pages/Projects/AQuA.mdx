@@ -180,8 +180,9 @@ A list of AQuA assessments are provided below, grouped under the abstract qualit
 <details>
   <summary><h5>Sentence and Word Length (Lix Readability)</h5></summary>
 
-  <p>The sentence and word length assessment uses a simple formula, the Lix readability formula, as a proxy for the readability of a text.
-  Scores are calculated for each chapter.</p>
+  <p>The sentence and word length assessment uses a modified version of 
+  the <a href="https://en.wikipedia.org/wiki/Lix_(readability_test)" target="_blank">Lix readability</a> formula as a proxy 
+  for the readability of a text. Scores are calculated for each chapter.</p>
   
   <h6>How it works:</h6> 
 
@@ -189,13 +190,18 @@ A list of AQuA assessments are provided below, grouped under the abstract qualit
   Lix readability works better for estimating the readability of non-English text than other readability metrics like Flesch Kincaid, 
   which contain English-specific linguistic information.</p>
   
-  The Lix readability formula is as follows:<br/>
+  <p>The Lix readability formula is as follows:<br/>
   <em>% of long words in the text + average words per sentence in the text</em>{"\n"}<br/>
-  where a word is classified as "long" if it contains a certain number of letters (for our purposes, greater than 7 letters).
-  <p></p>
+  where a word is classified as "long" if it contains a certain number of letters.
+  </p>
+
+  <p>In AQuA, this formula becomes:<br/>
+  <em>% of words in chapter over 7 characters long + average # of words per sentence in chapter</em>
+  </p>
   
-  <p>Lix readability works best for languages written with an alphabetic script, with whitespace at word boundaries. 
-  It does not take into account word choice or syntax, which also factor into a text's readability.</p> 
+  <p>This assessment works best for languages written with an alphabetic script.
+  We use whitespace to tokenize the text into words.  
+  This assessment does not take into account word choice or syntax, which also factor into a text's readability.</p> 
 </details>
 
 #### Clarity
