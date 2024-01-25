@@ -749,7 +749,7 @@
         "permalink": "/Projects/AQuA",
         "source": "@site/src/pages/Projects/AQuA.mdx",
         "title": "AQuA",
-        "description": "What is AQuA?",
+        "description": "*We are currently piloting AQuA in a small number of Bible Translation field trials.",
         "frontMatter": {
           "title": "AQuA"
         }
