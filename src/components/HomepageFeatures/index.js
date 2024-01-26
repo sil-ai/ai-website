@@ -28,7 +28,7 @@ const FeatureList = [
     title: 'Our Work',
     description: (
       <>
-        We partner to language communities to help provide access to & engagement with God's word, catalyze linguistically 
+        We partner with language communities to help provide access to & engagement with God's word, catalyze linguistically 
         diverse NLP research, and support all modalities of language (written, spoken, and signed).
       </>
     ),

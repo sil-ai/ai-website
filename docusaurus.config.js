@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/SIL_logo.png',
       navbar: {
-        title: 'Home',
+        // title: 'HOME',
         logo: {
           alt: 'SIL Logo',
           src: 'img/SIL_logo.png',
@@ -72,7 +72,7 @@ const config = {
         items: [
           {
             position: 'left',
-            label: 'Projects',
+            label: 'PROJECTS',
             type: 'dropdown',
             to: 'projects',
             items: [
@@ -96,7 +96,7 @@ const config = {
           },
           {
             position: 'left',
-            label: 'Research',
+            label: 'RESEARCH',
             type: 'dropdown',
             items: [
               {
@@ -111,7 +111,7 @@ const config = {
           },
           {
             position: 'left',
-            label: 'Datasets',
+            label: 'DATASETS',
             type: 'dropdown',
             items: [
               {
@@ -137,21 +137,21 @@ const config = {
           {
             //to: '/contact',
             to: '/contact',
-            label: 'Contact Us',
+            label: 'CONTACT US',
             position: 'left',
           },
           {
             href: 'https://www.sil.org',
-            label: 'SIL',
+            label: 'SIL INTERNATIONAL',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SIL International.`,
+        copyright: `COPYRIGHT © ${new Date().getFullYear()} SIL INTERNATIONAL.`,
       },
       prism: {
         theme: lightCodeTheme,

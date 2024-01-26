@@ -40,7 +40,6 @@ export default {
   "themeConfig": {
     "image": "img/SIL_logo.png",
     "navbar": {
-      "title": "Home",
       "logo": {
         "alt": "SIL Logo",
         "src": "img/SIL_logo.png"
@@ -48,7 +47,7 @@ export default {
       "items": [
         {
           "position": "left",
-          "label": "Projects",
+          "label": "PROJECTS",
           "type": "dropdown",
           "to": "projects",
           "items": [
@@ -72,7 +71,7 @@ export default {
         },
         {
           "position": "left",
-          "label": "Research",
+          "label": "RESEARCH",
           "type": "dropdown",
           "items": [
             {
@@ -87,7 +86,7 @@ export default {
         },
         {
           "position": "left",
-          "label": "Datasets",
+          "label": "DATASETS",
           "type": "dropdown",
           "items": [
             {
@@ -102,21 +101,21 @@ export default {
         },
         {
           "to": "/contact",
-          "label": "Contact Us",
+          "label": "CONTACT US",
           "position": "left"
         },
         {
           "href": "https://www.sil.org",
-          "label": "SIL",
+          "label": "SIL INTERNATIONAL",
           "position": "right"
         }
       ],
       "hideOnScroll": false
     },
     "footer": {
-      "style": "dark",
+      "style": "light",
       "links": [],
-      "copyright": "Copyright © 2024 SIL International."
+      "copyright": "COPYRIGHT © 2024 SIL INTERNATIONAL."
     },
     "prism": {
       "theme": {
