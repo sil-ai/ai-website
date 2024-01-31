@@ -123,6 +123,11 @@ export default [
     exact: true
   },
   {
+    path: '/Projects/acts2',
+    component: ComponentCreator('/Projects/acts2', 'ce2'),
+    exact: true
+  },
+  {
     path: '/Projects/AQuA',
     component: ComponentCreator('/Projects/AQuA', '3af'),
     exact: true
