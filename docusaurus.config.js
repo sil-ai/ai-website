@@ -92,6 +92,10 @@ const config = {
                 label: 'tools.bible',
                 to: 'Projects/bible-tools',
               },
+              {
+                label: 'Acts 2',
+                to: 'Projects/acts2',
+              }
             ]
           },
           {

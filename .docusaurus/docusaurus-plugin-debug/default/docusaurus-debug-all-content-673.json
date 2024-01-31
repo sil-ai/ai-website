@@ -728,6 +728,26 @@
       },
       {
         "type": "mdx",
+        "permalink": "/Research/multimodal",
+        "source": "@site/src/pages/Research/multimodal.md",
+        "title": "Multimodal Language Models",
+        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
+        "frontMatter": {
+          "title": "Multimodal Language Models"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Research/speech-synthesis",
+        "source": "@site/src/pages/Research/speech-synthesis.md",
+        "title": "Speech Synthesis",
+        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
+        "frontMatter": {
+          "title": "Speech Synthesis"
+        }
+      },
+      {
+        "type": "mdx",
         "permalink": "/Datasets/bloom",
         "source": "@site/src/pages/Datasets/bloom.md",
         "title": "Bloom Library",
@@ -752,6 +772,16 @@
         "description": "*We are currently piloting AQuA in a small number of Bible Translation field trials.",
         "frontMatter": {
           "title": "AQuA"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Projects/acts2",
+        "source": "@site/src/pages/Projects/acts2.mdx",
+        "title": "Acts 2",
+        "description": "Acts 2 is our translation service aimed at non-scripture text and audio going out into a wide range of languages.",
+        "frontMatter": {
+          "title": "Acts 2"
         }
       },
       {
@@ -782,26 +812,6 @@
         "description": "The next stage of Bible Translation needs to be dramatically deprofessionalized if the remaining Scriptures are to be translated. The challenge is in determining how we might involve many more passionate people in the work while still providing technical and subject matter expert support to a broadening base of workers engaged in translation. To do this, an integrated, AI-enabled platform is needed where they can do their work, utilize the latest technology and get access to the support needed. Serval will meet translation workers at their point of need and equip developers with a common framework to provide needed expertise and help.",
         "frontMatter": {
           "title": "Serval"
-        }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Research/multimodal",
-        "source": "@site/src/pages/Research/multimodal.md",
-        "title": "Multimodal Language Models",
-        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
-        "frontMatter": {
-          "title": "Multimodal Language Models"
-        }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Research/speech-synthesis",
-        "source": "@site/src/pages/Research/speech-synthesis.md",
-        "title": "Speech Synthesis",
-        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
-        "frontMatter": {
-          "title": "Speech Synthesis"
         }
       }
     ]
