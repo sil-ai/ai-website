@@ -1,0 +1,9 @@
+{
+  "type": "mdx",
+  "permalink": "/mai24",
+  "source": "@site/src/pages/mai24.mdx",
+  "frontMatter": {
+    "redirect": true,
+    "to": "https://give.sil.org/give/531548/#!/donation/checkout?c_src=MissionalAIpostcard"
+  }
+}

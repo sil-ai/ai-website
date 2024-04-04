@@ -692,6 +692,15 @@
       },
       {
         "type": "mdx",
+        "permalink": "/mai24",
+        "source": "@site/src/pages/mai24.mdx",
+        "frontMatter": {
+          "redirect": true,
+          "to": "https://give.sil.org/give/531548/#!/donation/checkout?c_src=MissionalAIpostcard"
+        }
+      },
+      {
+        "type": "mdx",
         "permalink": "/markdown-page",
         "source": "@site/src/pages/markdown-page.md",
         "title": "Markdown page example",
@@ -705,7 +714,7 @@
         "permalink": "/projects",
         "source": "@site/src/pages/projects.mdx",
         "title": "Projects",
-        "description": "M2 Chatbot Platform",
+        "description": "Augmented Quality Assessment (AQuA)",
         "frontMatter": {
           "title": "Projects"
         }
