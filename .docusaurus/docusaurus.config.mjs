@@ -104,6 +104,18 @@ export default {
           ]
         },
         {
+          "to": "Ethics/ethics",
+          "label": "NEWS",
+          "type": "dropdown",
+          "items": [
+            {
+              "label": "Ethics Statement",
+              "to": "Ethics/ethics"
+            }
+          ],
+          "position": "left"
+        },
+        {
           "to": "/contact",
           "label": "CONTACT US",
           "position": "left"

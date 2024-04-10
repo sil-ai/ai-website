@@ -113,6 +113,11 @@ export default [
     exact: true
   },
   {
+    path: '/Ethics/ethics',
+    component: ComponentCreator('/Ethics/ethics', '7b7'),
+    exact: true
+  },
+  {
     path: '/mai24',
     component: ComponentCreator('/mai24', '05d'),
     exact: true

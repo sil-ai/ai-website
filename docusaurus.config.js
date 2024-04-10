@@ -128,16 +128,17 @@ const config = {
               }
             ]
           },
-          // {
-          //   to: '/blog', 
-          //   label: 'Blog', 
-          //   position: 'left',
-          // },
-          // {
-          //   to: '/team',
-          //   label: 'Meet the Team',
-          //   position: 'left',
-          // },
+          {
+            to: 'Ethics/ethics',
+            label: 'NEWS',
+            type: 'dropdown',
+            items: [
+              {
+                label: 'Ethics Statement',
+                to: 'Ethics/ethics'
+              }
+            ]
+          },
           {
             //to: '/contact',
             to: '/contact',
