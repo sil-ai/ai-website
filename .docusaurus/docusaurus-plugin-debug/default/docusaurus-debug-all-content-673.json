@@ -755,6 +755,16 @@
       },
       {
         "type": "mdx",
+        "permalink": "/Ethics/ethics",
+        "source": "@site/src/pages/Ethics/ethics.mdx",
+        "title": "Ethics Statement",
+        "description": "The rapid advancement of Artificial Intelligence (AI) and Natural Language Processing (NLP)",
+        "frontMatter": {
+          "title": "Ethics Statement"
+        }
+      },
+      {
+        "type": "mdx",
         "permalink": "/Research/multimodal",
         "source": "@site/src/pages/Research/multimodal.md",
         "title": "Multimodal Language Models",
