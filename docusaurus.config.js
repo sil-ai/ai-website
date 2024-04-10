@@ -129,13 +129,12 @@ const config = {
             ]
           },
           {
-            to: 'Ethics/ethics',
             label: 'NEWS',
             type: 'dropdown',
             items: [
               {
                 label: 'Ethics Statement',
-                to: 'Ethics/ethics'
+                to: 'ethics'
               }
             ]
           },
