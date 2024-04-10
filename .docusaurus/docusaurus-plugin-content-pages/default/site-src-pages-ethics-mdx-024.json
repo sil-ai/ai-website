@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/ethics",
+  "source": "@site/src/pages/ethics.mdx",
+  "title": "Ethics Statement",
+  "description": "The rapid advancement of Artificial Intelligence (AI) and Natural Language Processing (NLP)",
+  "frontMatter": {
+    "title": "Ethics Statement"
+  }
+}

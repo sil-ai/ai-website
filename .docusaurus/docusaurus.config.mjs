@@ -110,7 +110,7 @@ export default {
           "items": [
             {
               "label": "Ethics Statement",
-              "to": "Ethics/ethics"
+              "to": "ethics"
             }
           ],
           "position": "left"

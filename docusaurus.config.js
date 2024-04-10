@@ -135,7 +135,7 @@ const config = {
             items: [
               {
                 label: 'Ethics Statement',
-                to: 'Ethics/ethics'
+                to: 'ethics'
               }
             ]
           },

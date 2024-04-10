@@ -113,8 +113,8 @@ export default [
     exact: true
   },
   {
-    path: '/Ethics/ethics',
-    component: ComponentCreator('/Ethics/ethics', '7b7'),
+    path: '/ethics',
+    component: ComponentCreator('/ethics', 'da6'),
     exact: true
   },
   {
