@@ -686,6 +686,16 @@
         "source": "@site/src/pages/contact_code.jsx"
       },
       {
+        "type": "mdx",
+        "permalink": "/ethics",
+        "source": "@site/src/pages/ethics.mdx",
+        "title": "Ethics Statement",
+        "description": "The rapid advancement of Artificial Intelligence (AI) and Natural Language Processing (NLP)",
+        "frontMatter": {
+          "title": "Ethics Statement"
+        }
+      },
+      {
         "type": "jsx",
         "permalink": "/",
         "source": "@site/src/pages/index.js"
@@ -755,36 +765,6 @@
       },
       {
         "type": "mdx",
-        "permalink": "/Ethics/ethics",
-        "source": "@site/src/pages/Ethics/ethics.mdx",
-        "title": "Ethics Statement",
-        "description": "The rapid advancement of Artificial Intelligence (AI) and Natural Language Processing (NLP)",
-        "frontMatter": {
-          "title": "Ethics Statement"
-        }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Research/multimodal",
-        "source": "@site/src/pages/Research/multimodal.md",
-        "title": "Multimodal Language Models",
-        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
-        "frontMatter": {
-          "title": "Multimodal Language Models"
-        }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Research/speech-synthesis",
-        "source": "@site/src/pages/Research/speech-synthesis.md",
-        "title": "Speech Synthesis",
-        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
-        "frontMatter": {
-          "title": "Speech Synthesis"
-        }
-      },
-      {
-        "type": "mdx",
         "permalink": "/Projects/AQuA",
         "source": "@site/src/pages/Projects/AQuA.mdx",
         "title": "AQuA",
@@ -831,6 +811,26 @@
         "description": "The next stage of Bible Translation needs to be dramatically deprofessionalized if the remaining Scriptures are to be translated. The challenge is in determining how we might involve many more passionate people in the work while still providing technical and subject matter expert support to a broadening base of workers engaged in translation. To do this, an integrated, AI-enabled platform is needed where they can do their work, utilize the latest technology and get access to the support needed. Serval will meet translation workers at their point of need and equip developers with a common framework to provide needed expertise and help.",
         "frontMatter": {
           "title": "Serval"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Research/multimodal",
+        "source": "@site/src/pages/Research/multimodal.md",
+        "title": "Multimodal Language Models",
+        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
+        "frontMatter": {
+          "title": "Multimodal Language Models"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Research/speech-synthesis",
+        "source": "@site/src/pages/Research/speech-synthesis.md",
+        "title": "Speech Synthesis",
+        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
+        "frontMatter": {
+          "title": "Speech Synthesis"
         }
       }
     ]
