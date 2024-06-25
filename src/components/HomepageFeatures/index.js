@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     imgSrc: require('@site/static/img/homepage3.png').default,
-    title: 'SIL International',
+    title: 'SIL INTERNATIONAL',
     description: (
       <>
         SIL is a global, faith-based nonprofit that works with local communities around the world to develop 
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     imgSrc: require('@site/static/img/homepage2.png').default,
-    title: 'Our Vision for AI',
+    title: 'OUR VISION FOR AI',
     description: (
       <>
         We long to see people flourishing in community as the benefits of AI and Natural Language Processing (NLP) 
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     imgSrc: require('@site/static/img/homepage1.png').default,
-    title: 'Our Work',
+    title: 'OUR WORK',
     description: (
       <>
         We partner with language communities to help provide access to & engagement with God's word, catalyze linguistically 

@@ -193,19 +193,19 @@
     },
     "config": "config---contact-code-5-e-9-6bf"
   },
-  "/Datasets/bloom-f00": {
+  "/datasets/bloom-612": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---datasets-bloomb-0-e-ed6"
+    "content": "content---datasets-bloom-7-a-0-90e"
   },
-  "/Datasets/ebible-79c": {
+  "/datasets/ebible-e07": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---datasets-ebible-6-ce-6c0"
+    "content": "content---datasets-ebible-08-d-2a9"
   },
   "/ethics-da6": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
@@ -235,40 +235,40 @@
     },
     "content": "content---projects-127-374"
   },
-  "/Projects/acts2-ce2": {
+  "/projects/acts2-455": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---projects-acts-2-f-28-559"
+    "content": "content---projects-acts-22-e-8-b1d"
   },
-  "/Projects/AQuA-3af": {
+  "/projects/AQuA-80e": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---projects-a-qu-af-92-c9b"
+    "content": "content---projects-a-qu-adc-1-7e6"
   },
-  "/Projects/bible-tools-466": {
+  "/projects/bible-tools-e7a": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---projects-bible-tools-728-b00"
+    "content": "content---projects-bible-toolse-2-f-8c1"
   },
-  "/Projects/chat-cd6": {
+  "/projects/chat-f79": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---projects-chatba-9-87d"
+    "content": "content---projects-chatd-7-e-035"
   },
-  "/Projects/serval-658": {
+  "/projects/serval-1aa": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---projects-servalc-2-c-a1b"
+    "content": "content---projects-servalf-34-184"
   },
   "/rail-0de": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
@@ -277,19 +277,19 @@
     },
     "content": "content---rail-5-c-3-746"
   },
-  "/Research/multimodal-691": {
+  "/research/multimodal-b55": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---research-multimodale-27-168"
+    "content": "content---research-multimodal-36-c-835"
   },
-  "/Research/speech-synthesis-d17": {
+  "/research/speech-synthesis-2c3": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---contactff-3-00d"
     },
-    "content": "content---research-speech-synthesis-104-2bd"
+    "content": "content---research-speech-synthesis-7-f-6-e04"
   },
   "/team-6dd": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",

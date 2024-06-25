@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/research/speech-synthesis",
+  "source": "@site/src/pages/research/speech-synthesis.md",
+  "title": "Speech Synthesis",
+  "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
+  "frontMatter": {
+    "title": "Speech Synthesis"
+  }
+}

@@ -103,13 +103,13 @@ export default [
     exact: true
   },
   {
-    path: '/Datasets/bloom',
-    component: ComponentCreator('/Datasets/bloom', 'f00'),
+    path: '/datasets/bloom',
+    component: ComponentCreator('/datasets/bloom', '612'),
     exact: true
   },
   {
-    path: '/Datasets/ebible',
-    component: ComponentCreator('/Datasets/ebible', '79c'),
+    path: '/datasets/ebible',
+    component: ComponentCreator('/datasets/ebible', 'e07'),
     exact: true
   },
   {
@@ -133,28 +133,28 @@ export default [
     exact: true
   },
   {
-    path: '/Projects/acts2',
-    component: ComponentCreator('/Projects/acts2', 'ce2'),
+    path: '/projects/acts2',
+    component: ComponentCreator('/projects/acts2', '455'),
     exact: true
   },
   {
-    path: '/Projects/AQuA',
-    component: ComponentCreator('/Projects/AQuA', '3af'),
+    path: '/projects/AQuA',
+    component: ComponentCreator('/projects/AQuA', '80e'),
     exact: true
   },
   {
-    path: '/Projects/bible-tools',
-    component: ComponentCreator('/Projects/bible-tools', '466'),
+    path: '/projects/bible-tools',
+    component: ComponentCreator('/projects/bible-tools', 'e7a'),
     exact: true
   },
   {
-    path: '/Projects/chat',
-    component: ComponentCreator('/Projects/chat', 'cd6'),
+    path: '/projects/chat',
+    component: ComponentCreator('/projects/chat', 'f79'),
     exact: true
   },
   {
-    path: '/Projects/serval',
-    component: ComponentCreator('/Projects/serval', '658'),
+    path: '/projects/serval',
+    component: ComponentCreator('/projects/serval', '1aa'),
     exact: true
   },
   {
@@ -163,13 +163,13 @@ export default [
     exact: true
   },
   {
-    path: '/Research/multimodal',
-    component: ComponentCreator('/Research/multimodal', '691'),
+    path: '/research/multimodal',
+    component: ComponentCreator('/research/multimodal', 'b55'),
     exact: true
   },
   {
-    path: '/Research/speech-synthesis',
-    component: ComponentCreator('/Research/speech-synthesis', 'd17'),
+    path: '/research/speech-synthesis',
+    component: ComponentCreator('/research/speech-synthesis', '2c3'),
     exact: true
   },
   {

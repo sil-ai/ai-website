@@ -64,7 +64,6 @@ const config = {
       // Replace with your project's social card
       image: 'img/SIL_logo.png',
       navbar: {
-        // title: 'HOME',
         logo: {
           alt: 'SIL Logo',
           src: 'img/SIL_logo.png',
@@ -78,23 +77,23 @@ const config = {
             items: [
               {
                 label: 'AQuA',
-                to: 'Projects/AQuA',
+                to: 'projects/AQuA',
               },
               {
                 label: 'M2 Chat Platform',
-                to: 'Projects/chat',
+                to: 'projects/chat',
               },
               {
                 label: 'Serval / Scripture Forge',
-                to: 'Projects/serval',
+                to: 'projects/serval',
               },
               {
                 label: 'tools.bible',
-                to: 'Projects/bible-tools',
+                to: 'projects/bible-tools',
               },
               {
                 label: 'Acts 2',
-                to: 'Projects/acts2',
+                to: 'projects/acts2',
               }
             ]
           },
@@ -105,11 +104,11 @@ const config = {
             items: [
               {
                 label: 'Speech Synthesis',
-                to: 'Research/speech-synthesis',
+                to: 'research/speech-synthesis',
               },
               {
                 label: 'Multimodal Language Models',
-                to: 'Research/multimodal',
+                to: 'research/multimodal',
               },
             ] 
           },
@@ -120,11 +119,11 @@ const config = {
             items: [
               {
                 label: 'Bloom',
-                to: 'Datasets/bloom',
+                to: 'datasets/bloom',
               },
               {
                 label: 'eBible',
-                to: 'Datasets/ebible',
+                to: 'datasets/ebible',
               }
             ]
           },

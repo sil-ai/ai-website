@@ -53,23 +53,23 @@ export default {
           "items": [
             {
               "label": "AQuA",
-              "to": "Projects/AQuA"
+              "to": "projects/AQuA"
             },
             {
               "label": "M2 Chat Platform",
-              "to": "Projects/chat"
+              "to": "projects/chat"
             },
             {
               "label": "Serval / Scripture Forge",
-              "to": "Projects/serval"
+              "to": "projects/serval"
             },
             {
               "label": "tools.bible",
-              "to": "Projects/bible-tools"
+              "to": "projects/bible-tools"
             },
             {
               "label": "Acts 2",
-              "to": "Projects/acts2"
+              "to": "projects/acts2"
             }
           ]
         },
@@ -80,11 +80,11 @@ export default {
           "items": [
             {
               "label": "Speech Synthesis",
-              "to": "Research/speech-synthesis"
+              "to": "research/speech-synthesis"
             },
             {
               "label": "Multimodal Language Models",
-              "to": "Research/multimodal"
+              "to": "research/multimodal"
             }
           ]
         },
@@ -95,11 +95,11 @@ export default {
           "items": [
             {
               "label": "Bloom",
-              "to": "Datasets/bloom"
+              "to": "datasets/bloom"
             },
             {
               "label": "eBible",
-              "to": "Datasets/ebible"
+              "to": "datasets/ebible"
             }
           ]
         },
