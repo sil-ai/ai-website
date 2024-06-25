@@ -7,13 +7,16 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #005cb9;
-  --ifm-color-primary-dark: #0053a7;
+  /* --ifm-color-primary: #005cb9; */
+  --ifm-color-primary: #005CB9;
+  --ifm-color-primary-dark: #034D8A;
+  --ifm-color-primary-light: #00A7E1;
+  /* --ifm-color-primary-dark: #0053a7;
   --ifm-color-primary-darker: #004e9d;
   --ifm-color-primary-darkest: #034d8a;
   --ifm-color-primary-light: #0065cb;
-  --ifm-color-primary-lighter: #008aaf;
-  --ifm-color-primary-lightest: #00a7e1;
+  --ifm-color-primary-lighter: #0069d1;
+  --ifm-color-primary-lightest: #0079e1; */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Lora', serif;
@@ -50,6 +53,12 @@
   }
 }
 
+/*Change hero banner color to match primary*/
+.hero {
+  background-color: var(--ifm-color-primary);
+  margin-bottom: 2rem;
+}
+
 /*Change hero__title to use Playfair Display*/
 .hero .hero__title {
   font-family: 'Playfair Display', serif;
@@ -74,11 +83,50 @@
 /*Change button to use Source Sans 3*/
 .button {
   font-family: 'Source Sans 3', sans-serif;
+  background-color: var(--ifm-color-primary-light);
+  color: #fff;
+}
+
+/*Change secondary buttons to use white text*/
+.button.button--secondary.button--lg {
+  color: #fff;
+}
+
+/* secondary button hover */
+.button.button--secondary.button--lg:hover {
+  background-color: white;
+  color: black;
+}
+
+/* add padding above homepage images */
+.features_src-components-HomepageFeatures-styles-module {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.features_src-components-HomepageFeatures-styles-module h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.features_src-components-HomepageFeatures-styles-module p {
+  font-size: 1.2rem;
 }
 
 /*Change footer color to match primary*/
 .footer {
-  background-color: var(--ifm-color-primary-lightest);
+  background-color: var(--ifm-color-primary);
+}
+
+/*Give images on explainer webpages some room to breathe*/
+.img_node_modules-\@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Space out assessment explanations */
+.anchorWithStickyNavbar_node_modules-\@docusaurus-theme-classic-lib-theme-Heading-styles-module {
+  margin-top: 1.7rem;
 }
 
 /*Change footer__copyright to use Source Sans 3*/

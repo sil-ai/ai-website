@@ -739,16 +739,8 @@
       },
       {
         "type": "mdx",
-        "permalink": "/team",
-        "source": "@site/src/pages/team.mdx",
-        "title": "Meet the team",
-        "description": "Jake Wadsley",
-        "frontMatter": {}
-      },
-      {
-        "type": "mdx",
-        "permalink": "/Datasets/bloom",
-        "source": "@site/src/pages/Datasets/bloom.md",
+        "permalink": "/datasets/bloom",
+        "source": "@site/src/pages/datasets/bloom.md",
         "title": "Bloom Library",
         "description": "SIL recently worked with researchers from the University of Dayton and Masakhane to create Bloom Library, a linguistically diverse set of multimodal and multilingual datasets for language modeling, image captioning, visual storytelling, and speech synthesis/recognition. These datasets represent either the most, or among the most, multilingual datasets for each of the included downstream tasks. In total, the initial release of the Bloom Library datasets covers 363 languages across 32 language families.",
         "frontMatter": {
@@ -757,16 +749,16 @@
       },
       {
         "type": "mdx",
-        "permalink": "/Datasets/ebible",
-        "source": "@site/src/pages/Datasets/ebible.md",
+        "permalink": "/datasets/ebible",
+        "source": "@site/src/pages/datasets/ebible.md",
         "title": "eBible Corpus",
         "description": "The eBible corpus is a curated corpus of parallel data derived from versions of the Bible provided by eBible.org, containing over 1000 bibles in hundreds of languages. The corpus is publicly available on GitHub and on Huggingface.",
         "frontMatter": {}
       },
       {
         "type": "mdx",
-        "permalink": "/Projects/AQuA",
-        "source": "@site/src/pages/Projects/AQuA.mdx",
+        "permalink": "/projects/AQuA",
+        "source": "@site/src/pages/projects/AQuA.mdx",
         "title": "AQuA",
         "description": "As of April 2024, anyone in the bible translation movement can apply for an AQuA account.",
         "frontMatter": {
@@ -775,8 +767,8 @@
       },
       {
         "type": "mdx",
-        "permalink": "/Projects/acts2",
-        "source": "@site/src/pages/Projects/acts2.mdx",
+        "permalink": "/projects/acts2",
+        "source": "@site/src/pages/projects/acts2.mdx",
         "title": "Acts 2",
         "description": "Acts 2 is our translation service aimed at non-scripture text and audio going out into a wide range of languages.",
         "frontMatter": {
@@ -785,8 +777,8 @@
       },
       {
         "type": "mdx",
-        "permalink": "/Projects/bible-tools",
-        "source": "@site/src/pages/Projects/bible-tools.md",
+        "permalink": "/projects/bible-tools",
+        "source": "@site/src/pages/projects/bible-tools.md",
         "title": "tools.bible",
         "description": "Tools.Bible was created (in partnership with Biblica) to offer an easy-to-use centralized library of all tools available in the Bible translation ecosystem. We have gathered data on features, capabilities, use-cases, and even testimonials from those who have first-hand experience using them on translation projects, making all that critical information searchable so that you can find the tools you need today.",
         "frontMatter": {
@@ -795,8 +787,8 @@
       },
       {
         "type": "mdx",
-        "permalink": "/Projects/chat",
-        "source": "@site/src/pages/Projects/chat.md",
+        "permalink": "/projects/chat",
+        "source": "@site/src/pages/projects/chat.md",
         "title": "M2 Chat Platform",
         "description": "Manage multilingual user experiences at scale! Our revolutionary multilingual chat platform enables organizations to scale their bots to operate seamlessly across many different languages.",
         "frontMatter": {
@@ -805,8 +797,8 @@
       },
       {
         "type": "mdx",
-        "permalink": "/Projects/serval",
-        "source": "@site/src/pages/Projects/serval.md",
+        "permalink": "/projects/serval",
+        "source": "@site/src/pages/projects/serval.md",
         "title": "Serval",
         "description": "The next stage of Bible Translation needs to be dramatically deprofessionalized if the remaining Scriptures are to be translated. The challenge is in determining how we might involve many more passionate people in the work while still providing technical and subject matter expert support to a broadening base of workers engaged in translation. To do this, an integrated, AI-enabled platform is needed where they can do their work, utilize the latest technology and get access to the support needed. Serval will meet translation workers at their point of need and equip developers with a common framework to provide needed expertise and help.",
         "frontMatter": {
@@ -815,8 +807,8 @@
       },
       {
         "type": "mdx",
-        "permalink": "/Research/multimodal",
-        "source": "@site/src/pages/Research/multimodal.md",
+        "permalink": "/research/multimodal",
+        "source": "@site/src/pages/research/multimodal.md",
         "title": "Multimodal Language Models",
         "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
         "frontMatter": {
@@ -825,8 +817,8 @@
       },
       {
         "type": "mdx",
-        "permalink": "/Research/speech-synthesis",
-        "source": "@site/src/pages/Research/speech-synthesis.md",
+        "permalink": "/research/speech-synthesis",
+        "source": "@site/src/pages/research/speech-synthesis.md",
         "title": "Speech Synthesis",
         "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
         "frontMatter": {

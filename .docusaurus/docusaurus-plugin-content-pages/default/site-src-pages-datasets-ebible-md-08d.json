@@ -1,0 +1,8 @@
+{
+  "type": "mdx",
+  "permalink": "/datasets/ebible",
+  "source": "@site/src/pages/datasets/ebible.md",
+  "title": "eBible Corpus",
+  "description": "The eBible corpus is a curated corpus of parallel data derived from versions of the Bible provided by eBible.org, containing over 1000 bibles in hundreds of languages. The corpus is publicly available on GitHub and on Huggingface.",
+  "frontMatter": {}
+}
