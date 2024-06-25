@@ -118,6 +118,17 @@
   background-color: var(--ifm-color-primary);
 }
 
+/*Give images on explainer webpages some room to breathe*/
+.img_node_modules-\@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Space out assessment explanations */
+.anchorWithStickyNavbar_node_modules-\@docusaurus-theme-classic-lib-theme-Heading-styles-module {
+  margin-top: 1.7rem;
+}
+
 /*Change footer__copyright to use Source Sans 3*/
 .footer__copyright {
   font-family: 'Source Sans 3', sans-serif;

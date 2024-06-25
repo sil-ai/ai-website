@@ -739,14 +739,6 @@
       },
       {
         "type": "mdx",
-        "permalink": "/team",
-        "source": "@site/src/pages/team.mdx",
-        "title": "Meet the team",
-        "description": "Jake Wadsley",
-        "frontMatter": {}
-      },
-      {
-        "type": "mdx",
         "permalink": "/datasets/bloom",
         "source": "@site/src/pages/datasets/bloom.md",
         "title": "Bloom Library",
