@@ -7,16 +7,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* --ifm-color-primary: #005cb9; */
   --ifm-color-primary: #005CB9;
   --ifm-color-primary-dark: #034D8A;
   --ifm-color-primary-light: #00A7E1;
-  /* --ifm-color-primary-dark: #0053a7;
-  --ifm-color-primary-darker: #004e9d;
-  --ifm-color-primary-darkest: #034d8a;
-  --ifm-color-primary-light: #0065cb;
-  --ifm-color-primary-lighter: #0069d1;
-  --ifm-color-primary-lightest: #0079e1; */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Lora', serif;
@@ -80,6 +73,11 @@
   font-family: 'Source Sans 3', sans-serif;
 }
 
+/* Change navbar background color */
+.navbar {
+  background-image: url('/img/Topography_LightGray_Alternate.png');
+}
+
 /*Change button to use Source Sans 3*/
 .button {
   font-family: 'Source Sans 3', sans-serif;
@@ -104,7 +102,7 @@
 }
 
 .features_src-components-HomepageFeatures-styles-module h3 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
@@ -127,6 +125,10 @@
 /* Space out assessment explanations */
 .anchorWithStickyNavbar_node_modules-\@docusaurus-theme-classic-lib-theme-Heading-styles-module {
   margin-top: 1.7rem;
+}
+
+.col.col--8 h1 {
+  font-family: 'Playfair Display', serif;
 }
 
 /*Change footer__copyright to use Source Sans 3*/
