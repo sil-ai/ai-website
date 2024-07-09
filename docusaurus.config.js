@@ -92,26 +92,30 @@ const config = {
                 to: 'projects/bible-tools',
               },
               {
-                label: 'Acts 2',
+                label: 'Acts2',
                 to: 'projects/acts2',
+              },
+              {
+                label: 'AERO',
+                to: 'projects/AERO',
               }
             ]
           },
-          {
-            position: 'left',
-            label: 'RESEARCH',
-            type: 'dropdown',
-            items: [
-              {
-                label: 'Speech Synthesis',
-                to: 'research/speech-synthesis',
-              },
-              {
-                label: 'Multimodal Language Models',
-                to: 'research/multimodal',
-              },
-            ] 
-          },
+          // {
+          //   position: 'left',
+          //   label: 'RESEARCH',
+          //   type: 'dropdown',
+          //   items: [
+          //     {
+          //       label: 'Speech Synthesis',
+          //       to: 'research/speech-synthesis',
+          //     },
+          //     {
+          //       label: 'Multimodal Language Models',
+          //       to: 'research/multimodal',
+          //     },
+          //   ] 
+          // },
           {
             position: 'left',
             label: 'DATASETS',

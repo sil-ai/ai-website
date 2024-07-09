@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/projects/AERO",
+  "source": "@site/src/pages/projects/AERO.mdx",
+  "title": "AERO",
+  "description": "From AI for OBT to AERO",
+  "frontMatter": {
+    "title": "AERO"
+  }
+}

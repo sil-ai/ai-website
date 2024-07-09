@@ -7,16 +7,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* --ifm-color-primary: #005cb9; */
   --ifm-color-primary: #005CB9;
   --ifm-color-primary-dark: #034D8A;
   --ifm-color-primary-light: #00A7E1;
-  /* --ifm-color-primary-dark: #0053a7;
-  --ifm-color-primary-darker: #004e9d;
-  --ifm-color-primary-darkest: #034d8a;
-  --ifm-color-primary-light: #0065cb;
-  --ifm-color-primary-lighter: #0069d1;
-  --ifm-color-primary-lightest: #0079e1; */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Lora', serif;
@@ -80,6 +73,11 @@
   font-family: 'Source Sans 3', sans-serif;
 }
 
+/* Change navbar background color */
+.navbar {
+  background-image: url('/img/Topography_LightGray_Alternate.png');
+}
+
 /*Change button to use Source Sans 3*/
 .button {
   font-family: 'Source Sans 3', sans-serif;
@@ -104,7 +102,7 @@
 }
 
 .features_src-components-HomepageFeatures-styles-module h3 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
@@ -129,9 +127,35 @@
   margin-top: 1.7rem;
 }
 
+.col.col--8 h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
 /*Change footer__copyright to use Source Sans 3*/
 .footer__copyright {
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 600;
   color: #fff;
+}
+
+/*Change h2 to primary light*/
+h2 {
+  color: var(--ifm-color-primary-light);
+  font: 1.75rem 'Playfair Display', serif;
+  font-weight: 500;
+  padding-top: 0.6rem;
+}
+
+h3 {
+  font: 1.5rem 'Lora', serif;
+  font-weight: 500;
+  padding-top: 0.4rem;
+}
+
+/* create a class for primary light paragraph text */
+.primary-dark {
+  color: var(--ifm-color-primary-dark);
 }

@@ -138,6 +138,11 @@ export default [
     exact: true
   },
   {
+    path: '/projects/AERO',
+    component: ComponentCreator('/projects/AERO', '0f5'),
+    exact: true
+  },
+  {
     path: '/projects/AQuA',
     component: ComponentCreator('/projects/AQuA', '80e'),
     exact: true
