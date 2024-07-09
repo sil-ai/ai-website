@@ -129,6 +129,9 @@
 
 .col.col--8 h1 {
   font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 /*Change footer__copyright to use Source Sans 3*/
@@ -136,4 +139,23 @@
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 600;
   color: #fff;
+}
+
+/*Change h2 to primary light*/
+h2 {
+  color: var(--ifm-color-primary-light);
+  font: 1.75rem 'Playfair Display', serif;
+  font-weight: 500;
+  padding-top: 0.6rem;
+}
+
+h3 {
+  font: 1.5rem 'Lora', serif;
+  font-weight: 500;
+  padding-top: 0.4rem;
+}
+
+/* create a class for primary light paragraph text */
+.primary-dark {
+  color: var(--ifm-color-primary-dark);
 }

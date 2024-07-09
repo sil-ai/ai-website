@@ -724,7 +724,7 @@
         "permalink": "/projects",
         "source": "@site/src/pages/projects.mdx",
         "title": "Projects",
-        "description": "Augmented Quality Assessment (AQuA)",
+        "description": "AQuA: Augmented Quality Assessment",
         "frontMatter": {
           "title": "Projects"
         }
@@ -757,6 +757,16 @@
       },
       {
         "type": "mdx",
+        "permalink": "/projects/AERO",
+        "source": "@site/src/pages/projects/AERO.mdx",
+        "title": "AERO",
+        "description": "From AI for OBT to AERO",
+        "frontMatter": {
+          "title": "AERO"
+        }
+      },
+      {
+        "type": "mdx",
         "permalink": "/projects/AQuA",
         "source": "@site/src/pages/projects/AQuA.mdx",
         "title": "AQuA",
@@ -770,7 +780,7 @@
         "permalink": "/projects/acts2",
         "source": "@site/src/pages/projects/acts2.mdx",
         "title": "Acts 2",
-        "description": "Acts 2 is our translation service aimed at non-scripture text and audio going out into a wide range of languages.",
+        "description": "Acts2 is our translation service aimed at non-scripture text and audio going out into a wide range of languages.",
         "frontMatter": {
           "title": "Acts 2"
         }

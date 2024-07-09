@@ -3,7 +3,7 @@
   "permalink": "/projects",
   "source": "@site/src/pages/projects.mdx",
   "title": "Projects",
-  "description": "Augmented Quality Assessment (AQuA)",
+  "description": "AQuA: Augmented Quality Assessment",
   "frontMatter": {
     "title": "Projects"
   }
