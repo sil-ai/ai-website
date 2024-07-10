@@ -159,3 +159,13 @@ h3 {
 .primary-dark {
   color: var(--ifm-color-primary-dark);
 }
+
+/* a class for image captions */
+.caption {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+  color: gray;
+  margin-top: 0px;
+  padding-top: 0px;
+}
