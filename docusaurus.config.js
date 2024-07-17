@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/SIL_logo.png',
 
   // Set the production url of your site here
-  url: 'https://ai.sil.com',
+  url: 'https://ai.sil.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
