@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'SIL AI & NLP',
   tagline: 'AI that supports people flourishing with the languages they value most',
-  favicon: 'img/SIL_logo.png',
+  favicon: 'img/sil-favicon_0.ico',
 
   // Set the production url of your site here
   url: 'https://ai.sil.org',

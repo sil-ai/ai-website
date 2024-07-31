@@ -6,7 +6,7 @@
 export default {
   "title": "SIL AI & NLP",
   "tagline": "AI that supports people flourishing with the languages they value most",
-  "favicon": "img/SIL_logo.png",
+  "favicon": "img/sil-favicon_0.ico",
   "url": "https://ai.sil.org",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
