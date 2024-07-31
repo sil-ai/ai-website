@@ -3,7 +3,7 @@
   "permalink": "/projects/acts2",
   "source": "@site/src/pages/projects/acts2.mdx",
   "title": "Acts 2",
-  "description": "Acts2 is our translation service aimed at non-scripture text and audio going out into a wide range of languages.",
+  "description": "Acts2 is a service that leverages the latest advances in Artificial Intelligence",
   "frontMatter": {
     "title": "Acts 2"
   }

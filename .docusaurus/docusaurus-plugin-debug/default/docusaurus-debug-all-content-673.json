@@ -780,7 +780,7 @@
         "permalink": "/projects/acts2",
         "source": "@site/src/pages/projects/acts2.mdx",
         "title": "Acts 2",
-        "description": "Acts2 is our translation service aimed at non-scripture text and audio going out into a wide range of languages.",
+        "description": "Acts2 is a service that leverages the latest advances in Artificial Intelligence",
         "frontMatter": {
           "title": "Acts 2"
         }
@@ -799,10 +799,10 @@
         "type": "mdx",
         "permalink": "/projects/chat",
         "source": "@site/src/pages/projects/chat.md",
-        "title": "M2 Chat Platform",
-        "description": "Manage multilingual user experiences at scale! Our revolutionary multilingual chat platform enables organizations to scale their bots to operate seamlessly across many different languages.",
+        "title": "M2 Chat",
+        "description": "M2 is a chatbot creation platform that puts multilingualism and trust first.",
         "frontMatter": {
-          "title": "M2 Chat Platform"
+          "title": "M2 Chat"
         }
       },
       {
