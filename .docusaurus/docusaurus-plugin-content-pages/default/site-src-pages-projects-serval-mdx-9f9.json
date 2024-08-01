@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/projects/serval",
+  "source": "@site/src/pages/projects/serval.mdx",
+  "title": "Serval",
+  "description": "Serval provides API access to multiple AI and Natural Language Processing (NLP) tools",
+  "frontMatter": {
+    "title": "Serval"
+  }
+}
