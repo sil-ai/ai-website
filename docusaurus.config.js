@@ -76,46 +76,39 @@ const config = {
             to: 'projects',
             items: [
               {
-                label: 'AQuA',
-                to: 'projects/AQuA',
-              },
-              {
-                label: 'M2 Chat Platform',
-                to: 'projects/chat',
-              },
-              {
-                label: 'Serval / Scripture Forge',
-                to: 'projects/serval',
-              },
-              {
-                label: 'tools.bible',
-                to: 'projects/bible-tools',
-              },
-              {
                 label: 'Acts2',
                 to: 'projects/acts2',
               },
               {
                 label: 'AERO',
                 to: 'projects/AERO',
-              }
+              },
+              {
+                label: 'AQuA',
+                to: 'projects/AQuA',
+              },
+              {
+                label: 'Lynx',
+                to: 'projects/lynx',
+              },
+              {
+                label: 'M2 Chat Platform',
+                to: 'projects/chat',
+              },
+              {
+                label: 'Scripture Forge',
+                to: 'projects/scriptureforge'
+              },
+              {
+                label: 'Serval',
+                to: 'projects/serval'
+              },
+              {
+                label: 'tools.bible',
+                to: 'projects/bible-tools',
+              },
             ]
           },
-          // {
-          //   position: 'left',
-          //   label: 'RESEARCH',
-          //   type: 'dropdown',
-          //   items: [
-          //     {
-          //       label: 'Speech Synthesis',
-          //       to: 'research/speech-synthesis',
-          //     },
-          //     {
-          //       label: 'Multimodal Language Models',
-          //       to: 'research/multimodal',
-          //     },
-          //   ] 
-          // },
           {
             position: 'left',
             label: 'DATASETS',

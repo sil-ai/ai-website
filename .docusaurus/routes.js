@@ -158,8 +158,18 @@ export default [
     exact: true
   },
   {
+    path: '/projects/lynx',
+    component: ComponentCreator('/projects/lynx', 'f99'),
+    exact: true
+  },
+  {
+    path: '/projects/scriptureforge',
+    component: ComponentCreator('/projects/scriptureforge', '6b2'),
+    exact: true
+  },
+  {
     path: '/projects/serval',
-    component: ComponentCreator('/projects/serval', '1aa'),
+    component: ComponentCreator('/projects/serval', '0f6'),
     exact: true
   },
   {

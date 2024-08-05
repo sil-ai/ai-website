@@ -807,10 +807,30 @@
       },
       {
         "type": "mdx",
+        "permalink": "/projects/lynx",
+        "source": "@site/src/pages/projects/lynx.mdx",
+        "title": "Lynx",
+        "description": "Vision",
+        "frontMatter": {
+          "title": "Lynx"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/projects/scriptureforge",
+        "source": "@site/src/pages/projects/scriptureforge.mdx",
+        "title": "Scripture Forge",
+        "description": "Scripture Forge is an online app for team-based Bible translation,",
+        "frontMatter": {
+          "title": "Scripture Forge"
+        }
+      },
+      {
+        "type": "mdx",
         "permalink": "/projects/serval",
-        "source": "@site/src/pages/projects/serval.md",
+        "source": "@site/src/pages/projects/serval.mdx",
         "title": "Serval",
-        "description": "The next stage of Bible Translation needs to be dramatically deprofessionalized if the remaining Scriptures are to be translated. The challenge is in determining how we might involve many more passionate people in the work while still providing technical and subject matter expert support to a broadening base of workers engaged in translation. To do this, an integrated, AI-enabled platform is needed where they can do their work, utilize the latest technology and get access to the support needed. Serval will meet translation workers at their point of need and equip developers with a common framework to provide needed expertise and help.",
+        "description": "Serval provides API access to multiple AI and Natural Language Processing (NLP) tools",
         "frontMatter": {
           "title": "Serval"
         }

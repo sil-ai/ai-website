@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/projects/lynx",
+  "source": "@site/src/pages/projects/lynx.mdx",
+  "title": "Lynx",
+  "description": "Vision",
+  "frontMatter": {
+    "title": "Lynx"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/projects/scriptureforge",
+  "source": "@site/src/pages/projects/scriptureforge.mdx",
+  "title": "Scripture Forge",
+  "description": "Scripture Forge is an online app for team-based Bible translation,",
+  "frontMatter": {
+    "title": "Scripture Forge"
+  }
+}

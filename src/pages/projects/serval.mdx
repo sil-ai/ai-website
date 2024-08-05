@@ -1,0 +1,44 @@
+---
+title: Serval
+---
+
+# Serval
+
+Serval provides API access to multiple AI and Natural Language Processing (NLP) tools 
+developed at SIL and beyond. 
+
+## Overview
+
+- An <a href="https://github.com/sillsdev/serval" target="_blank">open source </a>
+<a href="https://prod.serval-api.org/swagger" target="_blank">REST API </a> 
+that enables incremental machine translation and batch translation.
+- Developers can access individual components and users can make use of reference UI integrations 
+into <a href="/projects/Lynx" target="_blank">Lynx</a>
+and <a href="/projects/scriptureforge" target="_blank">Scripture Forge</a>. 
+- Statistical machine translation (SMT) supports incremental training and translation suggestions. Incremental training allows the model to learn on the fly as the user translates.
+- Neural machine translation (NMT) for back translations into more than 200 languages based on the NLLB-200 model from Meta. 
+- Translation into new minority languages by fine-tuning the NLLB model.
+
+## Features
+
+- Supports externally developed and hosted NLP engines
+- File storage for uploading training and inference data for models
+- Notification API to notify the calling application about the status of model training and inferencing
+- Translation API for Paratext project files and text files
+- Handles USFM, including versification, verse ranges, custom styles, etc.
+- Generated translations can be returned as JSON or USFM
+
+## Future Development
+
+The Serval team has identified several opportunities to improve and extend the usefulness of the APIs. 
+The following features will be prioritized based on feedback from our partners and scheduled 
+for development based on team bandwidth and resource availability:
+
+- Integrating various techniques from industry to optimize the training and inferencing of NMT models (pruning, LoRA, FlashAttention)
+- Supporting new NMT models, including MADLAD-400 and LLMs
+- Interactive machine translation support using NMT models
+- APIs for translation quality assessment, providing API access 
+for <a href="/projects/AQuA" target="_blank">Augmented Quality Assessment (AQuA)</a> through Serval
+- APIs for audio content, such as text-to-speech, speech-to-text, speech-to-text alignment, and speech translation
+
+
