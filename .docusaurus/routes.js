@@ -123,11 +123,6 @@ export default [
     exact: true
   },
   {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '3c1'),
-    exact: true
-  },
-  {
     path: '/projects',
     component: ComponentCreator('/projects', 'a55'),
     exact: true
