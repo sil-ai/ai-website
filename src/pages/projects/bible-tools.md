@@ -4,7 +4,7 @@ title: tools.bible
 
 # tools.bible
 
-[Tools.Bible](https://tools.bible) was created (in partnership with [Biblica](https://www.biblica.com/)) to offer an easy-to-use centralized library of all tools available in the Bible translation ecosystem. We have gathered data on features, capabilities, use-cases, and even testimonials from those who have first-hand experience using them on translation projects, making all that critical information searchable so that you can find the tools you need today.
+[tools.bible](https://tools.bible) was created (in partnership with [Biblica](https://www.biblica.com/)) to offer an easy-to-use centralized library of all tools available in the Bible translation ecosystem. We have gathered data on features, capabilities, use-cases, and even testimonials from those who have first-hand experience using them on translation projects, making all that critical information searchable so that you can find the tools you need today.
 
 ## Mission
 

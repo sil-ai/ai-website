@@ -711,20 +711,10 @@
       },
       {
         "type": "mdx",
-        "permalink": "/markdown-page",
-        "source": "@site/src/pages/markdown-page.md",
-        "title": "Markdown page example",
-        "description": "You don't need React to write simple standalone pages.",
-        "frontMatter": {
-          "title": "Markdown page example"
-        }
-      },
-      {
-        "type": "mdx",
         "permalink": "/projects",
         "source": "@site/src/pages/projects.mdx",
         "title": "Projects",
-        "description": "AQuA: Augmented Quality Assessment",
+        "description": "Acts 2",
         "frontMatter": {
           "title": "Projects"
         }
@@ -790,7 +780,7 @@
         "permalink": "/projects/bible-tools",
         "source": "@site/src/pages/projects/bible-tools.md",
         "title": "tools.bible",
-        "description": "Tools.Bible was created (in partnership with Biblica) to offer an easy-to-use centralized library of all tools available in the Bible translation ecosystem. We have gathered data on features, capabilities, use-cases, and even testimonials from those who have first-hand experience using them on translation projects, making all that critical information searchable so that you can find the tools you need today.",
+        "description": "tools.bible was created (in partnership with Biblica) to offer an easy-to-use centralized library of all tools available in the Bible translation ecosystem. We have gathered data on features, capabilities, use-cases, and even testimonials from those who have first-hand experience using them on translation projects, making all that critical information searchable so that you can find the tools you need today.",
         "frontMatter": {
           "title": "tools.bible"
         }
