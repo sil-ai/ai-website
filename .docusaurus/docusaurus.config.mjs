@@ -118,7 +118,7 @@ export default {
         },
         {
           "href": "https://www.sil.org",
-          "label": "SIL INTERNATIONAL",
+          "label": "SIL GLOBAL",
           "position": "right"
         }
       ],
@@ -127,7 +127,7 @@ export default {
     "footer": {
       "style": "light",
       "links": [],
-      "copyright": "COPYRIGHT © 2024 SIL INTERNATIONAL."
+      "copyright": "COPYRIGHT © 2024 SIL GLOBAL."
     },
     "prism": {
       "theme": {

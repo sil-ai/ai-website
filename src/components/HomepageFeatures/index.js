@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     imgSrc: require('@site/static/img/homepage3.png').default,
-    title: 'SIL INTERNATIONAL',
+    title: 'SIL Global',
     description: (
       <>
         SIL is a global, faith-based nonprofit that works with local communities around the world to develop 

@@ -142,7 +142,7 @@ const config = {
           },
           {
             href: 'https://www.sil.org',
-            label: 'SIL INTERNATIONAL',
+            label: 'SIL GLOBAL',
             position: 'right',
           },
         ],
@@ -151,7 +151,7 @@ const config = {
         style: 'light',
         links: [
         ],
-        copyright: `COPYRIGHT © ${new Date().getFullYear()} SIL INTERNATIONAL.`,
+        copyright: `COPYRIGHT © ${new Date().getFullYear()} SIL GLOBAL.`,
       },
       prism: {
         theme: lightCodeTheme,
