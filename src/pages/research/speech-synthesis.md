@@ -17,7 +17,7 @@ The SIL AI team is creating scalable and reproducible data pipelines in AWS that
 
 **FACT #3** - Current available speech synthesis offerings (e.g., from GCP or AWS) support a negligible number of the world's 7100+ languages. Thus, the majority of language communities around the world are marginalized when it comes to being supported and flourishing in the digital sphere with their languages. 
 
-**FACT #4** - SIL International and its partners have recorded and curated high quality audio in 3600+ languages in the form of stories, audio books, audio Bibles, and language documentation. This audio is more linguistically diverse than any other audio datasets in the world, and a good bit of it can be used to train new speech synthesis models.
+**FACT #4** - SIL Global and its partners have recorded and curated high quality audio in 3600+ languages in the form of stories, audio books, audio Bibles, and language documentation. This audio is more linguistically diverse than any other audio datasets in the world, and a good bit of it can be used to train new speech synthesis models.
 
 **CONCLUSIONS**: 
 - There is an opportunity for SIL to expand speech synthesis functionality to a large number of new languages, 
