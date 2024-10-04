@@ -13,6 +13,7 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Lora', serif;
+  --ifm-navbar-height: 5.0rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -76,6 +77,11 @@
 /* Change navbar background color */
 .navbar {
   background-image: url('/img/Topography_LightGray_Alternate.png');
+  justify-content: center;
+}
+
+.navbar__inner{
+  max-width: var(--ifm-container-width-xl);
 }
 
 /*Change button to use Source Sans 3*/
@@ -94,6 +100,14 @@
 .button.button--secondary.button--lg:hover {
   background-color: white;
   color: black;
+}
+
+/* donate button, dark primary color, white text, extra space on the right */
+.button.button--primary.button--lg {
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  margin-right: 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 /* add padding above homepage images */

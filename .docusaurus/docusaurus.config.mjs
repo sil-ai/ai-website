@@ -24,7 +24,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/sidebars.js",
+          "sidebarPath": "/Users/cassie/Desktop/SIL/websites/ai-website/sidebars.js",
           "editUrl": "https://github.com/sil-ai"
         },
         "blog": {
@@ -32,7 +32,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/cweishaupt/Desktop/SIL/projects/ai-website/src/css/custom.css"
+          "customCss": "/Users/cassie/Desktop/SIL/websites/ai-website/src/css/custom.css"
         }
       }
     ]
@@ -115,6 +115,12 @@ export default {
           "to": "/contact",
           "label": "CONTACT US",
           "position": "left"
+        },
+        {
+          "to": "https://www.classy.org/give/623739/#!/donation/checkout",
+          "label": "DONATE",
+          "position": "right",
+          "className": "button button--primary button--lg"
         },
         {
           "href": "https://www.sil.org",

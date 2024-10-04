@@ -15,9 +15,9 @@
           "editUrlLocalized": "https://github.com/sil-ai/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/sidebars.js",
-          "contentPath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/docs",
-          "contentPathLocalized": "/home/cweishaupt/Desktop/SIL/projects/ai-website/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Users/cassie/Desktop/SIL/websites/ai-website/sidebars.js",
+          "contentPath": "/Users/cassie/Desktop/SIL/websites/ai-website/docs",
+          "contentPathLocalized": "/Users/cassie/Desktop/SIL/websites/ai-website/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "intro",
