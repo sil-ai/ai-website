@@ -144,12 +144,17 @@ export default [
   },
   {
     path: '/projects/bible-tools',
-    component: ComponentCreator('/projects/bible-tools', 'fee'),
+    component: ComponentCreator('/projects/bible-tools', '29b'),
     exact: true
   },
   {
     path: '/projects/chat',
-    component: ComponentCreator('/projects/chat', '3b2'),
+    component: ComponentCreator('/projects/chat', '94f'),
+    exact: true
+  },
+  {
+    path: '/projects/faithbridge',
+    component: ComponentCreator('/projects/faithbridge', '8c5'),
     exact: true
   },
   {

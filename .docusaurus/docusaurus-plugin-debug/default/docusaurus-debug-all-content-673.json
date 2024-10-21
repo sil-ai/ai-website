@@ -747,6 +747,26 @@
       },
       {
         "type": "mdx",
+        "permalink": "/research/multimodal",
+        "source": "@site/src/pages/research/multimodal.md",
+        "title": "Multimodal Language Models",
+        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
+        "frontMatter": {
+          "title": "Multimodal Language Models"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/research/speech-synthesis",
+        "source": "@site/src/pages/research/speech-synthesis.md",
+        "title": "Speech Synthesis",
+        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
+        "frontMatter": {
+          "title": "Speech Synthesis"
+        }
+      },
+      {
+        "type": "mdx",
         "permalink": "/projects/AERO",
         "source": "@site/src/pages/projects/AERO.mdx",
         "title": "AERO",
@@ -778,7 +798,7 @@
       {
         "type": "mdx",
         "permalink": "/projects/bible-tools",
-        "source": "@site/src/pages/projects/bible-tools.md",
+        "source": "@site/src/pages/projects/bible-tools.mdx",
         "title": "tools.bible",
         "description": "tools.bible was created (in partnership with Biblica) to offer an easy-to-use centralized library of all tools available in the Bible translation ecosystem. We have gathered data on features, capabilities, use-cases, and even testimonials from those who have first-hand experience using them on translation projects, making all that critical information searchable so that you can find the tools you need today.",
         "frontMatter": {
@@ -788,11 +808,21 @@
       {
         "type": "mdx",
         "permalink": "/projects/chat",
-        "source": "@site/src/pages/projects/chat.md",
+        "source": "@site/src/pages/projects/chat.mdx",
         "title": "M2 Chat",
         "description": "M2 is a chatbot creation platform that puts multilingualism and trust first.",
         "frontMatter": {
           "title": "M2 Chat"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/projects/faithbridge",
+        "source": "@site/src/pages/projects/faithbridge.mdx",
+        "title": "Faithbridge",
+        "description": "Faithbridge is a project that represents SIL’s research and development implementing more controllable",
+        "frontMatter": {
+          "title": "Faithbridge"
         }
       },
       {
@@ -823,26 +853,6 @@
         "description": "Serval provides API access to multiple AI and Natural Language Processing (NLP) tools",
         "frontMatter": {
           "title": "Serval"
-        }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/research/multimodal",
-        "source": "@site/src/pages/research/multimodal.md",
-        "title": "Multimodal Language Models",
-        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
-        "frontMatter": {
-          "title": "Multimodal Language Models"
-        }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/research/speech-synthesis",
-        "source": "@site/src/pages/research/speech-synthesis.md",
-        "title": "Speech Synthesis",
-        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
-        "frontMatter": {
-          "title": "Speech Synthesis"
         }
       }
     ]

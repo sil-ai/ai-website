@@ -88,6 +88,10 @@ const config = {
                 to: 'projects/AQuA',
               },
               {
+                label: 'Faithbridge',
+                to: 'projects/faithbridge',
+              },
+              {
                 label: 'Lynx',
                 to: 'projects/lynx',
               },
@@ -135,7 +139,6 @@ const config = {
             ]
           },
           {
-            //to: '/contact',
             to: '/contact',
             label: 'CONTACT US',
             position: 'left',
