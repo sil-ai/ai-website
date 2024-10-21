@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/projects/faithbridge",
+  "source": "@site/src/pages/projects/faithbridge.mdx",
+  "title": "Faithbridge",
+  "description": "Faithbridge is a project that represents SIL’s research and development implementing more controllable",
+  "frontMatter": {
+    "title": "Faithbridge"
+  }
+}

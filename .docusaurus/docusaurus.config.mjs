@@ -64,6 +64,10 @@ export default {
               "to": "projects/AQuA"
             },
             {
+              "label": "Faithbridge",
+              "to": "projects/faithbridge"
+            },
+            {
               "label": "Lynx",
               "to": "projects/lynx"
             },
