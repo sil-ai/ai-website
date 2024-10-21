@@ -136,7 +136,7 @@ const config = {
           },
           {
             //to: '/contact',
-            to: 'https://bfppcbtg.fwfmsites.com/',
+            to: '/contact',
             label: 'CONTACT US',
             position: 'left',
           },

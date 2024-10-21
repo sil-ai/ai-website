@@ -3,7 +3,7 @@ import React from 'react';
 const MyPage = () => (
   <>
     <iframe
-      src="https://bfppcbtg.fwcrmsites.com?redirectParent=true"
+      src="https://bfppcbtg.fwfmsites.com?redirectParent=true"
       frameBorder="0"
       scrolling="yes"
       width="100%"
