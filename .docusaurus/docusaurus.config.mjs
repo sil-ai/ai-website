@@ -121,6 +121,12 @@ export default {
           "position": "left"
         },
         {
+          "to": "https://www.classy.org/give/623739/#!/donation/checkout",
+          "label": "DONATE",
+          "position": "right",
+          "className": "button button--primary button--lg"
+        },
+        {
           "href": "https://www.sil.org",
           "label": "SIL GLOBAL",
           "position": "right"
