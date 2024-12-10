@@ -24,7 +24,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Users/cassie/Desktop/SIL/websites/ai-website/sidebars.js",
+          "sidebarPath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/sidebars.js",
           "editUrl": "https://github.com/sil-ai"
         },
         "blog": {
@@ -32,7 +32,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/Users/cassie/Desktop/SIL/websites/ai-website/src/css/custom.css"
+          "customCss": "/home/cweishaupt/Desktop/SIL/projects/ai-website/src/css/custom.css"
         }
       }
     ]
@@ -52,7 +52,7 @@ export default {
           "to": "projects",
           "items": [
             {
-              "label": "Acts2",
+              "label": "ACTS2",
               "to": "projects/acts2"
             },
             {
@@ -60,31 +60,31 @@ export default {
               "to": "projects/AERO"
             },
             {
-              "label": "AQuA",
+              "label": "AQUA",
               "to": "projects/AQuA"
             },
             {
-              "label": "Faithbridge",
+              "label": "FAITHBRIDGE",
               "to": "projects/faithbridge"
             },
             {
-              "label": "Lynx",
+              "label": "LYNX",
               "to": "projects/lynx"
             },
             {
-              "label": "M2 Chat Platform",
+              "label": "M2 CHAT PLATFORM",
               "to": "projects/chat"
             },
             {
-              "label": "Scripture Forge",
+              "label": "SCRIPTURE FORGE",
               "to": "projects/scriptureforge"
             },
             {
-              "label": "Serval",
+              "label": "SERVAL",
               "to": "projects/serval"
             },
             {
-              "label": "tools.bible",
+              "label": "TOOLS.BIBLE",
               "to": "projects/bible-tools"
             }
           ]
@@ -124,7 +124,7 @@ export default {
           "to": "https://www.classy.org/give/623739/#!/donation/checkout",
           "label": "DONATE",
           "position": "right",
-          "className": "button button--primary button--lg"
+          "className": "button custom-button"
         },
         {
           "href": "https://www.sil.org",

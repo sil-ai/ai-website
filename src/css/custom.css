@@ -183,3 +183,26 @@ h3 {
   margin-top: 0px;
   padding-top: 0px;
 }
+
+.custom-button {
+  background-color: var(--ifm-color-primary); /* Primary color */
+  color: white; /* White text color */
+  padding: 0.5rem 1.5rem; /* Padding */
+  border-radius: 0.5rem; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  display: inline-block; /* Inline elements */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No underline */
+  font-size: 1rem; /* Font size */
+  font-weight: 600; /* Font weight */
+  margin: 0.5rem; /* Margin */
+  transition: all 0.3s ease; /* Smooth transition */
+  border: 2px solid transparent; /* Default border (transparent) */
+}
+
+.custom-button:hover {
+  background-color: white; /* Change background color on hover */
+  color: var(--ifm-color-primary); /* Change text color */
+  transform: scale(1.05); /* Slight zoom effect */
+  border-color: var(--ifm-color-primary); /* Set border color */
+}
