@@ -76,7 +76,7 @@ const config = {
             to: 'projects',
             items: [
               {
-                label: 'Acts2',
+                label: 'ACTS2',
                 to: 'projects/acts2',
               },
               {
@@ -84,31 +84,31 @@ const config = {
                 to: 'projects/AERO',
               },
               {
-                label: 'AQuA',
+                label: 'AQUA',
                 to: 'projects/AQuA',
               },
               {
-                label: 'Faithbridge',
+                label: 'FAITHBRIDGE',
                 to: 'projects/faithbridge',
               },
               {
-                label: 'Lynx',
+                label: 'LYNX',
                 to: 'projects/lynx',
               },
               {
-                label: 'M2 Chat Platform',
+                label: 'M2 CHAT PLATFORM',
                 to: 'projects/chat',
               },
               {
-                label: 'Scripture Forge',
+                label: 'SCRIPTURE FORGE',
                 to: 'projects/scriptureforge'
               },
               {
-                label: 'Serval',
+                label: 'SERVAL',
                 to: 'projects/serval'
               },
               {
-                label: 'tools.bible',
+                label: 'TOOLS.BIBLE',
                 to: 'projects/bible-tools',
               },
             ]
@@ -147,7 +147,7 @@ const config = {
             to: 'https://www.classy.org/give/623739/#!/donation/checkout',
             label: 'DONATE',
             position: 'right',
-            className: 'button button--primary button--lg'
+            className: 'button custom-button'
           },
           {
             href: 'https://www.sil.org',

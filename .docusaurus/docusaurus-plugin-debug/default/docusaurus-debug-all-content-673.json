@@ -15,9 +15,9 @@
           "editUrlLocalized": "https://github.com/sil-ai/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/cassie/Desktop/SIL/websites/ai-website/sidebars.js",
-          "contentPath": "/Users/cassie/Desktop/SIL/websites/ai-website/docs",
-          "contentPathLocalized": "/Users/cassie/Desktop/SIL/websites/ai-website/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/sidebars.js",
+          "contentPath": "/home/cweishaupt/Desktop/SIL/projects/ai-website/docs",
+          "contentPathLocalized": "/home/cweishaupt/Desktop/SIL/projects/ai-website/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "intro",
@@ -729,23 +729,21 @@
       },
       {
         "type": "mdx",
-        "permalink": "/research/multimodal",
-        "source": "@site/src/pages/research/multimodal.md",
-        "title": "Multimodal Language Models",
-        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
+        "permalink": "/datasets/bloom",
+        "source": "@site/src/pages/datasets/bloom.md",
+        "title": "Bloom Library",
+        "description": "SIL recently worked with researchers from the University of Dayton and Masakhane to create Bloom Library, a linguistically diverse set of multimodal and multilingual datasets for language modeling, image captioning, visual storytelling, and speech synthesis/recognition. These datasets represent either the most, or among the most, multilingual datasets for each of the included downstream tasks. In total, the initial release of the Bloom Library datasets covers 363 languages across 32 language families.",
         "frontMatter": {
-          "title": "Multimodal Language Models"
+          "title": "Bloom Library"
         }
       },
       {
         "type": "mdx",
-        "permalink": "/research/speech-synthesis",
-        "source": "@site/src/pages/research/speech-synthesis.md",
-        "title": "Speech Synthesis",
-        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
-        "frontMatter": {
-          "title": "Speech Synthesis"
-        }
+        "permalink": "/datasets/ebible",
+        "source": "@site/src/pages/datasets/ebible.md",
+        "title": "eBible Corpus",
+        "description": "The eBible corpus is a curated corpus of parallel data derived from versions of the Bible provided by eBible.org, containing over 1000 bibles in hundreds of languages. The corpus is publicly available on GitHub and on Huggingface.",
+        "frontMatter": {}
       },
       {
         "type": "mdx",
@@ -802,7 +800,7 @@
         "permalink": "/projects/faithbridge",
         "source": "@site/src/pages/projects/faithbridge.mdx",
         "title": "Faithbridge",
-        "description": "Faithbridge is a project that represents SIL’s research and development implementing more controllable",
+        "description": "Faithbridge is a reliable AI-powered Bible Q&A app that enables local language translators to interact",
         "frontMatter": {
           "title": "Faithbridge"
         }
@@ -839,21 +837,23 @@
       },
       {
         "type": "mdx",
-        "permalink": "/datasets/bloom",
-        "source": "@site/src/pages/datasets/bloom.md",
-        "title": "Bloom Library",
-        "description": "SIL recently worked with researchers from the University of Dayton and Masakhane to create Bloom Library, a linguistically diverse set of multimodal and multilingual datasets for language modeling, image captioning, visual storytelling, and speech synthesis/recognition. These datasets represent either the most, or among the most, multilingual datasets for each of the included downstream tasks. In total, the initial release of the Bloom Library datasets covers 363 languages across 32 language families.",
+        "permalink": "/research/multimodal",
+        "source": "@site/src/pages/research/multimodal.md",
+        "title": "Multimodal Language Models",
+        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
         "frontMatter": {
-          "title": "Bloom Library"
+          "title": "Multimodal Language Models"
         }
       },
       {
         "type": "mdx",
-        "permalink": "/datasets/ebible",
-        "source": "@site/src/pages/datasets/ebible.md",
-        "title": "eBible Corpus",
-        "description": "The eBible corpus is a curated corpus of parallel data derived from versions of the Bible provided by eBible.org, containing over 1000 bibles in hundreds of languages. The corpus is publicly available on GitHub and on Huggingface.",
-        "frontMatter": {}
+        "permalink": "/research/speech-synthesis",
+        "source": "@site/src/pages/research/speech-synthesis.md",
+        "title": "Speech Synthesis",
+        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
+        "frontMatter": {
+          "title": "Speech Synthesis"
+        }
       }
     ]
   },
