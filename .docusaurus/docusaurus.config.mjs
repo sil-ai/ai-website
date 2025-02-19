@@ -52,8 +52,8 @@ export default {
           "to": "projects",
           "items": [
             {
-              "label": "ACTS2",
-              "to": "projects/acts2"
+              "label": "ALPHA2",
+              "to": "projects/alpha2"
             },
             {
               "label": "AERO",
@@ -137,7 +137,7 @@ export default {
     "footer": {
       "style": "light",
       "links": [],
-      "copyright": "COPYRIGHT © 2024 SIL GLOBAL."
+      "copyright": "COPYRIGHT © 2025 SIL GLOBAL."
     },
     "prism": {
       "theme": {

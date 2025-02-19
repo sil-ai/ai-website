@@ -138,6 +138,11 @@ export default [
     exact: true
   },
   {
+    path: '/projects/alpha2',
+    component: ComponentCreator('/projects/alpha2', 'ea4'),
+    exact: true
+  },
+  {
     path: '/projects/AQuA',
     component: ComponentCreator('/projects/AQuA', '768'),
     exact: true
