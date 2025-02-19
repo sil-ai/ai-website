@@ -714,7 +714,7 @@
         "permalink": "/projects",
         "source": "@site/src/pages/projects.mdx",
         "title": "Projects",
-        "description": "Acts 2",
+        "description": "Alpha2",
         "frontMatter": {
           "title": "Projects"
         }
@@ -725,6 +725,24 @@
         "source": "@site/src/pages/rail.mdx",
         "title": "SIL RAIL-M License v1.0",
         "description": "This is a license (the “License”) between you (“You”) and SIL International (“Licensor”).",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/datasets/bloom",
+        "source": "@site/src/pages/datasets/bloom.md",
+        "title": "Bloom Library",
+        "description": "SIL recently worked with researchers from the University of Dayton and Masakhane to create Bloom Library, a linguistically diverse set of multimodal and multilingual datasets for language modeling, image captioning, visual storytelling, and speech synthesis/recognition. These datasets represent either the most, or among the most, multilingual datasets for each of the included downstream tasks. In total, the initial release of the Bloom Library datasets covers 363 languages across 32 language families.",
+        "frontMatter": {
+          "title": "Bloom Library"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/datasets/ebible",
+        "source": "@site/src/pages/datasets/ebible.md",
+        "title": "eBible Corpus",
+        "description": "The eBible corpus is a curated corpus of parallel data derived from versions of the Bible provided by eBible.org, containing over 1000 bibles in hundreds of languages. The corpus is publicly available on GitHub and on Huggingface.",
         "frontMatter": {}
       },
       {
@@ -751,10 +769,20 @@
         "type": "mdx",
         "permalink": "/projects/acts2",
         "source": "@site/src/pages/projects/acts2.mdx",
-        "title": "Acts2",
-        "description": "Acts2 is a service that leverages the latest advances in Artificial Intelligence to provide state-of-the-art",
+        "title": "Alpha2",
+        "description": "Alpha2 is a service that leverages the latest advances in Artificial Intelligence to provide state-of-the-art",
         "frontMatter": {
-          "title": "Acts2"
+          "title": "Alpha2"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/projects/alpha2",
+        "source": "@site/src/pages/projects/alpha2.mdx",
+        "title": "Alpha2",
+        "description": "Alpha2 is a service that leverages the latest advances in Artificial Intelligence to provide state-of-the-art",
+        "frontMatter": {
+          "title": "Alpha2"
         }
       },
       {
@@ -816,24 +844,6 @@
         "frontMatter": {
           "title": "Serval"
         }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/datasets/bloom",
-        "source": "@site/src/pages/datasets/bloom.md",
-        "title": "Bloom Library",
-        "description": "SIL recently worked with researchers from the University of Dayton and Masakhane to create Bloom Library, a linguistically diverse set of multimodal and multilingual datasets for language modeling, image captioning, visual storytelling, and speech synthesis/recognition. These datasets represent either the most, or among the most, multilingual datasets for each of the included downstream tasks. In total, the initial release of the Bloom Library datasets covers 363 languages across 32 language families.",
-        "frontMatter": {
-          "title": "Bloom Library"
-        }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/datasets/ebible",
-        "source": "@site/src/pages/datasets/ebible.md",
-        "title": "eBible Corpus",
-        "description": "The eBible corpus is a curated corpus of parallel data derived from versions of the Bible provided by eBible.org, containing over 1000 bibles in hundreds of languages. The corpus is publicly available on GitHub and on Huggingface.",
-        "frontMatter": {}
       },
       {
         "type": "mdx",

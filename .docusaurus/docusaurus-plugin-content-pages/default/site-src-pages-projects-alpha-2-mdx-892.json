@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/projects/alpha2",
+  "source": "@site/src/pages/projects/alpha2.mdx",
+  "title": "Alpha2",
+  "description": "Alpha2 is a service that leverages the latest advances in Artificial Intelligence to provide state-of-the-art",
+  "frontMatter": {
+    "title": "Alpha2"
+  }
+}
