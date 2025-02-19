@@ -729,26 +729,6 @@
       },
       {
         "type": "mdx",
-        "permalink": "/research/multimodal",
-        "source": "@site/src/pages/research/multimodal.md",
-        "title": "Multimodal Language Models",
-        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
-        "frontMatter": {
-          "title": "Multimodal Language Models"
-        }
-      },
-      {
-        "type": "mdx",
-        "permalink": "/research/speech-synthesis",
-        "source": "@site/src/pages/research/speech-synthesis.md",
-        "title": "Speech Synthesis",
-        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
-        "frontMatter": {
-          "title": "Speech Synthesis"
-        }
-      },
-      {
-        "type": "mdx",
         "permalink": "/datasets/bloom",
         "source": "@site/src/pages/datasets/bloom.md",
         "title": "Bloom Library",
@@ -863,6 +843,26 @@
         "description": "Serval provides API access to multiple AI and Natural Language Processing (NLP) tools",
         "frontMatter": {
           "title": "Serval"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/research/multimodal",
+        "source": "@site/src/pages/research/multimodal.md",
+        "title": "Multimodal Language Models",
+        "description": "Pre-trained language models are increasingly applied in ways that are agnostic to targeted downstream tasks. This usage has",
+        "frontMatter": {
+          "title": "Multimodal Language Models"
+        }
+      },
+      {
+        "type": "mdx",
+        "permalink": "/research/speech-synthesis",
+        "source": "@site/src/pages/research/speech-synthesis.md",
+        "title": "Speech Synthesis",
+        "description": "The SIL AI team is creating scalable and reproducible data pipelines in AWS that take (as input) audio and text data and output trained and evaluated speech synthesis models. The team is working towards using this pipeline to create speech synthesis models in 100's of new languages.",
+        "frontMatter": {
+          "title": "Speech Synthesis"
         }
       }
     ]
