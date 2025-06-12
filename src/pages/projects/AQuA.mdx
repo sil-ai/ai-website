@@ -3,13 +3,11 @@ title: AQuA
 ---
 
 import ReactPlayer from 'react-player'
+import AQuASignUpPage from './aquasignup_code';
 
 # AQuA: Augmented Quality Assessment
 
-<p style={{textAlign: 'center'}}><i>Anyone in the Bible translation movement can apply for an AQuA account.
-Please email us at <a href="mailto:idx_aqua@sil.org">idx_aqua@sil.org</a> to learn more.</i></p>
-
-<div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '20px' }}>
+<div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '30px', paddingTop: '40px' }}>
   <ReactPlayer controls url='https://youtu.be/6MIDtmwJfZM?si=pNqMSr4ozVVKo8Eh' />
 </div>
 
@@ -26,17 +24,41 @@ helping them to more easily spot the obvious errors, which in turn lets them foc
 and attention on the parts of a draft that really need their expertise. Several teams have used AQuA to find errors
 in their draft that otherwise would have likely made their way to print.
 
-![James Calibrated Word Correspondence](/img/james-wc-calibrated.png)
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/niv-lsg-rut-heatmap.png" alt="Heatmap for Ruth between the NIV and LSG" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/kjv-sch-2sa-scatter.png" alt="Scatterplot for 2 Samuel between KJV and SCH" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
-![Romans Missing Words](/img/missing-words-romans.png)
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/kjv-sch-2sa-mw.png" alt="Missing Words table for 2 Samuel between KJV and SCH" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/volk-piechart.png" alt="Translations of 'Volk'" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
-![Acts Scatterplot](/img/acts-scatterplot.png)
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/volk-mw.png" alt="Verse missing the word 'Volk'" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
+
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/von-dem-wasser-ngrams.png" alt="Ngrams table for 'von dem Wasser'" style={{ maxWidth: '400px', height: 'auto' }} />
+</div>
 
 <p>
   AQuA is currently available via a standalone web application, with plans to integrate into 
-  <a href="/projects/scriptureforge" target="_blank"> Scripture Forge</a> and platform.bible.
-  If your team is interested in using AQuA, please email us at <a href="mailto:idx_aqua@sil.org">idx_aqua@sil.org</a>.
+  <a href="/projects/scriptureforge" target="_blank"> Scripture Forge</a> and 
+  <a href="https://platform.paratext.org/" target="_blank"> platform.bible</a>
 </p>
+
+<p>
+  Please fill out this form or email <a href="mailto:idx_aqua@sil.org">idx_aqua@sil.org</a> to request an AQuA account.
+</p>
+
+<AQuASignUpPage />
+
+
 
