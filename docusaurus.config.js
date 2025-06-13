@@ -119,24 +119,19 @@ const config = {
             type: 'dropdown',
             items: [
               {
-                label: 'Bloom',
+                label: 'BLOOM',
                 to: 'datasets/bloom',
               },
               {
-                label: 'eBible',
+                label: 'EBIBLE',
                 to: 'datasets/ebible',
               }
             ]
           },
           {
-            label: 'NEWS',
-            type: 'dropdown',
-            items: [
-              {
-                label: 'Ethics Statement',
-                to: 'ethics'
-              }
-            ]
+            to: 'ethics',
+            label: 'ETHICS',
+            position: 'left',
           },
           {
             to: '/contact',

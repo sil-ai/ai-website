@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ContactPage = () => (
+const AQuASignUpPage = () => (
   <>
     <iframe
-      src="https://bfppcbtg.fwfmsites.com?redirectParent=true"
+      src="https://ogq7njg8.fwfmsites.com?redirectParent=true"
       frameBorder="0"
       scrolling="yes"
       width="100%"
@@ -23,4 +23,4 @@ const ContactPage = () => (
   </>
 );
 
-export default ContactPage;
+export default AQuASignUpPage;

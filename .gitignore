@@ -2,4 +2,4 @@
 build/
 node_modules/
 .docusaurus/
-39venv
+venv
