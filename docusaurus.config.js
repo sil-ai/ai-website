@@ -92,7 +92,7 @@ const config = {
                 to: 'projects/faithbridge',
               },
               {
-                label: 'FLExTrans',
+                label: 'FLEXTRANS',
                 to: 'projects/flextrans',
               },
               {
