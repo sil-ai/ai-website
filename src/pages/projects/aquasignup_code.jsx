@@ -3,7 +3,8 @@ import React from 'react';
 const AQuASignUpPage = () => (
   <>
     <iframe
-      src="https://ogq7njg8.fwfmsites.com?redirectParent=true"
+      // src="https://ogq7njg8.fwfmsites.com?redirectParent=true"
+      src="https://mailchi.mp/820d37d1cf93/aqua-sign-up"
       frameBorder="0"
       scrolling="yes"
       width="100%"
@@ -11,7 +12,7 @@ const AQuASignUpPage = () => (
       marginHeight="0"
       marginWidth="0"
       name="landing-page-embed-frame"
-      style={{ height: '100vh' }}
+      style={{ height: '80vh' }}
     ></iframe>
     <script type="text/javascript">
       {`window.addEventListener("message", function(e) {
