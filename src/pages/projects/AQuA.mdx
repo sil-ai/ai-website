@@ -3,229 +3,62 @@ title: AQuA
 ---
 
 import ReactPlayer from 'react-player'
+import AQuASignUpPage from './aquasignup_code';
 
 # AQuA: Augmented Quality Assessment
 
-<p style={{textAlign: 'center'}}><i>As of April 2024, anyone in the bible translation movement can apply for an AQuA account.
-Please email us at <a href="mailto:idx_aqua@sil.org">idx_aqua@sil.org</a> to learn more.</i></p>
-
-<div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '20px' }}>
+<div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '30px', paddingTop: '40px' }}>
   <ReactPlayer controls url='https://youtu.be/6MIDtmwJfZM?si=pNqMSr4ozVVKo8Eh' />
 </div>
 
-## What is AQuA?
-
 AQuA is a copilot tool developed by SIL Global that seeks to develop capacity and increase the thoroughness 
 of translation quality assurance. 
-It harnesses artificial intelligence (AI) techniques, assisting translation teams in objectively assessing multiple facets 
-of translation quality by *enhancing* and *complementing* preexisting quality assurance work. 
-AQuA runs several augmented quality assessment methods in the areas of accuracy, naturalness, and clarity, which are then analyzed by
-translation teams to help them make more informed decisions about the quality of their translations.
-
-To this end, AQuA is creating tools for:
-
-1. **translators**, aiding them in identifying obvious problems so they can address them earlier in the translation process;
-2. **church leaders** and **consultants**, allowing them to do their checking work more thoroughly and more consistently;
-3. **administrators** and **strategists**, helping them to compare and evaluate different methodologies and products (including new AI-based translation methodologies proposed by TBTA, SIL, and Avodah).
-
-By bringing attention to possible anomalous passages in a draft, AQuA accelerates the quality assessment process by helping:
-
-- **translators** make corrections (and produce an improved draft) prior to other quality checks;
-- **church leaders** and **consultants** gain an “at-a-glance” understanding of quality across a draft and quickly dig into the relevant, granular quality issues; and
-- **administrators** and **strategists** more easily track quality across projects to guide strategic allocations of checking resources.
+It harnesses artificial intelligence (AI) techniques, assisting translation teams in assessing multiple facets 
+of translation quality by *enhancing* and *complementing* their quality assurance work. 
+After running several quality assessment algorithms on a Bible translation, AQuA provides different visualizations 
+showcasing different properties of the text. Translation teams can then review these visualizations to help them see 
+their translation in a new light.
 
 Our hope is that AQuA would empower translation teams in the quality checking process, 
-helping them to more easily spot the obvious errors, 
-which in turn lets them focus more of their precious time and attention on the parts of a draft that really need their expertise.
+helping them to more easily spot the obvious errors, which in turn lets them focus more of their precious time 
+and attention on the parts of a draft that really need their expertise. Several teams have used AQuA to find errors
+in their draft that otherwise would have likely made their way to print.
 
-![James Calibrated Word Correspondence](/img/james-wc-calibrated.png)
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/niv-lsg-rut-heatmap.png" alt="Heatmap for Ruth between the NIV and LSG" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
-## AQuA as an AI Copilot
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/kjv-sch-2sa-scatter.png" alt="Scatterplot for 2 Samuel between KJV and SCH" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
-We are seeing a recent explosion of interest in AI-driven tools that are paired as “copilots” with human workers. 
-These include copilots that are helping people to write code, draft emails, diagnose patients, write recipes, and much more.
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/kjv-sch-2sa-mw.png" alt="Missing Words table for 2 Samuel between KJV and SCH" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
-The use of the term copilot in these instances emphasizes two important points:
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/volk-piechart.png" alt="Translations of 'Volk'" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
-1. A person is in control of the process (i.e., they are the pilot)
-2. The person's work is enhanced when it is assisted by the AI tool (in terms of efficiency, thoroughness, accuracy, creativity, etc)
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/volk-mw.png" alt="Verse missing the word 'Volk'" style={{ maxWidth: '600px', height: 'auto' }} />
+</div>
 
-In Bible translation, there are individuals such as church leaders, translators, and consultants, who undergo specialty training 
-to create high-quality translation drafts. AQuA, an AI quality-checking copilot, is able to help these translation experts 
-locate anomalies and issues within translation drafts relating to the areas of accuracy, naturalness, and clarity 
-that would likely not have been found otherwise.
-
-It is important to note that AQuA is not designed to give insight into issues related to the other important qualities of a draft, 
-such as the beauty or acceptability of a translation. AQuA is a tool which helps stakeholders in the translation process 
-to more efficiently and thoroughly evaluate *certain qualities* of a draft translation; with the help of AQuA, teams can
-improve several qualities of their draft within the amount of time allotted to them.
-
-![Romans Missing Words](/img/missing-words-romans.png)
-
-## What does AQuA Measure?
-
-The quality of a translation is not a singular entity; rather, it is best approached as a whole set of different sub-qualities. 
-With AQuA, we are not attempting to come up with a singular estimate of quality, but only to assess a subset of these component qualities. 
-
-With AQuA, we do not assess these such-qualities directly; 
-we only deal with qualities that can be measured algorithmically and expressed as a number. 
-These measurable qualities are never an exact match to one of the abstract qualities (such as accuracy, naturalness, or clarity); 
-instead they work like *proxies for key aspects of the abstract qualities*. 
-For example, the AQuA metrics for Word Correspondence and Semantic Similarity are both quantifiable measures 
-that relate to the accuracy of a translation, but do not give a full picture of its accuracy.
-
-![Acts Scatterplot](/img/acts-scatterplot.png)
-
-## Methods of Assessment 
-
-A list of AQuA assessments are provided below, grouped under the abstract qualities of accuracy, naturalness, and clarity:
-
-### ACCURACY
-
-<details>
-  <summary><h5>Word Correspondence</h5></summary>
-
-  <p>The word correspondence assessment gives insight into how closely words align between two translations.
-  Lower scores indicate less "word-for-wordness", while higher scores indicate more "word-for-wordness".
-  Scores are calculated for each verse.</p>
-
-  <h6>How it works:</h6>
-
-  <p>Word correspondence scores are a measure of AQuA’s confidence in its ability to align functionally equivalent words between 
-  two translations. Although the user may select any two translations on which to run a word correspondence assessment,
-  the most common use case is comparing a draft translation to a reference or model translation.</p> 
-
-  <p>The word correspondence algorithm works in several steps. First, we use a variety of computational techniques in an 
-  attempt to align corresponding words between the two texts.</p>
-
-  Here are the algorithms we use for word alignment: 
-  <ul>
-    <li>
-      <a href="https://aclanthology.org/N13-1073/" target="_blank">Fast Align</a> (the same algorithm used in the Paratext Interlinearizer)
-    </li>
-    <li>
-      <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank">Jaccard Similarity</a>, 
-      which matches words based on their verse co-occurences between the two translations
-    </li>
-    <li>
-      <a href="https://en.wikipedia.org/wiki/Cosine_similarity" target="_blank">Cosine similarity</a> between 
-      high-dimenstional word embeddings (vectors), produced by an 
-      AI <a href="https://en.wikipedia.org/wiki/Autoencoder" target="_blank">autoencoder</a> model
-    </li>
-  </ul>
-
-  <p>All of the above algorithms train only on the Bible texts being analyzed for the word correspondence assessment.
-  In other words, no pretraining data is required.</p> 
-  
-  <p>Each of these algorithms yields a score between 0 and 1 for every possible combination of word alignment pairs in each verse, 
-  representing the algorithm's confidence in each word alignment pair.</p>   
-
-  <p>The word correspondence scores are calculated by averaging out the scores produced by the above algorithms for each word pair, 
-  and then, for each word, finding its most likely alignment (i.e. the alignment pair with the highest confidence score).
-  Verse-level scores are calculated by averaging out these high-confidence word pairs across an entire verse. 
-  We then multiply the scores by 10, to produce a final score between 0 and 10.</p> 
-
-  *We tokenize words by whitespace, so this assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
-  as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages.* 
-</details>
-
-<details>
-  <summary><h5>Semantic Similarity</h5></summary>
-
-  <p>The semantic similarity assessment gives insight into differences in meaning between two translations. 
-  Lower scores indicate more difference in meaning, while higher scores indicate less difference in meaning.
-  Scores are calculated for each verse.</p> 
-
-  <h6>How it works:</h6>
-
-  <p>Although the user may select any two translations on which to run a semantic similarity assessment,
-  the most common use case is comparing a back translation of a draft to a reference or model translation.
-  For best results, the two translations being compared should be in languages of wider communication.</p>
-
-  <p>We use Google's Language Agnostic BERT Sentence Embeddings (LaBSE) model to assign a score from 0 to 10 to each verse pair. 
-  LaBSE is pretrained on a large dataset of sentence pairs in 109 languages of wider communication.
-  You can read more about the LaBSE model <a href="https://ai.googleblog.com/2020/08/language-agnostic-bert-sentence.html">here</a>, or read the model paper <a href="https://arxiv.org/abs/2007.01852">here</a>.</p> 
-</details>
-
-<details>
-  <summary><h5>Missing and Added Words</h5></summary>
-
-  <p>The missing and added words assessment provides insight into words in one translation that have no likely equivalent in another translation.</p>
-
-  <h6>How it works:</h6>
-
-  <p>Although the user may select any two translations on which to run a missing and added words assessment,
-  the most common use case is comparing a draft translation to a reference or model translation. 
-  We will refer to these two texts as the "project" and "comparison" texts, respectively.</p>
-
-  <p>To identify potential missing words, we build off of the word alignments generated during the word correspondence assessment. 
-  After running the word correspondence algorithm between the two selected translations, we then run it again between 
-  the comparison translation, selected by the user, and several other high-quality reference translations. 
-  Finally, we compare results across these assessments.</p>
-
-  <p>Words in the comparison text that have no likely alignment in the project text, 
-  but do have a likely alignment in each of the other reference translations, are flagged as potentially missing from the project text.</p> 
-
-  <p>The process for identifying potential added words in the project text is similar. 
-  We once again examine the alignments between the project and comparison texts. 
-  If a word in the project text has no likely equivalent in the comparison text, it is flagged as potentially added.</p> 
-
-  *We tokenize words by whitespace, so this assessment currently does not work for non-whitespace languages, such as Thai. This assessment also yields more accurate results when used on isolating languages,
-  as opposed to polysynthetic languages. Future research will focus on non-whitespace, subword, and phrase-level tokenization to improve performance on a wider variety of languages.* 
-</details>
-
-
-
-### NATURALNESS
-
-<details>
-  <summary><h5>Sentence and Word Length (Lix Readability)</h5></summary>
-
-  <p>The sentence and word length assessment uses a modified version of 
-  the <a href="https://en.wikipedia.org/wiki/Lix_(readability_test)" target="_blank">Lix readability</a> formula as a proxy 
-  for the readability of a text. Scores are calculated for each chapter.</p>
-  
-  <h6>How it works:</h6> 
-
-  <p>Lix readability is a formula based on the word and sentence length of a text. 
-  Lix readability works better for estimating the readability of non-English text than other readability metrics like Flesch Kincaid, 
-  which contain English-specific linguistic information.</p>
-  
-  <p>The Lix readability formula is as follows:<br/>
-  <em>% of long words in the text + average words per sentence in the text</em>{"\n"}<br/>
-  where a word is classified as "long" if it contains a certain number of letters.
-  </p>
-
-  <p>In AQuA, this formula becomes:<br/>
-  <em>% of words in chapter over 7 characters long + average # of words per sentence in chapter</em>
-  </p>
-  
-  <p>This assessment works best for languages written with an alphabetic script.
-  We use whitespace to tokenize the text into words.  
-  This assessment does not take into account word choice or syntax, which also factor into a text's readability.</p> 
-</details>
-
-### CLARITY
-
-<details>
-  <summary><h5>Comprehensibility (Coming Soon)</h5></summary>
-
-  <p>The comprehensibility assessment gives insight into key information that may have been omitted from a translation.</p>
-
-  <h6>How it works:</h6>
-
-  <p>The comprehensibility assessment draws from a dataset of question-and-answer pairs that ask about expected key information in a verse. 
-  This assessment can only be run on translations in languages of wider communication (including back translations).</p>
-
-  <p>We provide a verse from the selected translation as context to a question-answering model.
-  We then ask that model a question pertaining to that specific verse from the dataset.
-  We then compare the model's answer to the expected answer from the dataset. 
-  If the model's answer differs significantly from the expected answer, it suggests the possibility of missing or incomplete information within the verse.</p>
-</details>
+<div style={{ textAlign: 'center', marginBottom: '30px' }}>
+  <img src="/img/von-dem-wasser-ngrams.png" alt="Ngrams table for 'von dem Wasser'" style={{ maxWidth: '400px', height: 'auto' }} />
+</div>
 
 <p>
   AQuA is currently available via a standalone web application, with plans to integrate into 
-  <a href="/projects/scriptureforge" target="_blank"> Scripture Forge</a> and platform.bible.
-  If your team is interested in using AQuA, please email us at <a href="mailto:idx_aqua@sil.org">idx_aqua@sil.org</a>.
+  <a href="/projects/scriptureforge" target="_blank"> Scripture Forge</a> and 
+  <a href="https://platform.paratext.org/" target="_blank"> platform.bible</a>
 </p>
+
+<p>
+  Please fill out this form or email <a href="mailto:idx_aqua@sil.org">idx_aqua@sil.org</a> to request an AQuA account.
+</p>
+
+<AQuASignUpPage />
+
+
 

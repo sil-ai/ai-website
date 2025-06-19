@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MyPage = () => (
+const MailChimpContactPage = () => (
   <>
     <iframe
-      src="https://bfppcbtg.fwfmsites.com?redirectParent=true"
+      src="https://us11.list-manage.com/contact-form?u=fde88a1e2cd6f30e3892969c9&form_id=7450e461c8476418f7f8208ee9b71527"
       frameBorder="0"
       scrolling="yes"
       width="100%"
@@ -23,4 +23,4 @@ const MyPage = () => (
   </>
 );
 
-export default MyPage;
+export default MailChimpContactPage;
