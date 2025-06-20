@@ -3,7 +3,6 @@ import React from 'react';
 const AQuASignUpPage = () => (
   <>
     <iframe
-      // src="https://ogq7njg8.fwfmsites.com?redirectParent=true"
       src="https://mailchi.mp/820d37d1cf93/aqua-sign-up"
       frameBorder="0"
       scrolling="yes"
