@@ -28,6 +28,36 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Dark-mode navbar/menu contrast improvements */
+[data-theme='dark'] .navbar {
+  /* Remove the light texture in dark mode and use a darker, slightly translucent background */
+  background-image: none;
+  background-color: rgba(10, 13, 17, 0.92);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 2px 8px rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+[data-theme='dark'] .navbar__inner {
+  background: transparent;
+}
+
+[data-theme='dark'] .navbar__link,
+[data-theme='dark'] .navbar__title,
+[data-theme='dark'] .navbar__item {
+  color: #e6eef6;
+}
+
+[data-theme='dark'] .navbar__items .dropdown__menu,
+[data-theme='dark'] .dropdown__menu,
+[data-theme='dark'] .menu,
+[data-theme='dark'] .menu__list {
+  /* Make dropdown/menu panels visibly distinct from the bar */
+  background-color: rgba(15,18,22,0.96);
+  color: #eef6ff;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
 /*Increase default font size*/
 @media screen and (max-width: 996px) {
   :root {
