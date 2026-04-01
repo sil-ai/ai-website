@@ -107,10 +107,6 @@ const config = {
                 label: 'SERVAL',
                 to: 'projects/serval'
               },
-              {
-                label: 'TOOLS.BIBLE',
-                to: 'projects/bible-tools',
-              },
             ]
           },
           {
