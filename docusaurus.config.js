@@ -100,20 +100,12 @@ const config = {
                 to: 'projects/lynx',
               },
               {
-                label: 'M2 CHAT PLATFORM',
-                to: 'projects/chat',
-              },
-              {
                 label: 'SCRIPTURE FORGE',
                 to: 'projects/scriptureforge'
               },
               {
                 label: 'SERVAL',
                 to: 'projects/serval'
-              },
-              {
-                label: 'TOOLS.BIBLE',
-                to: 'projects/bible-tools',
               },
             ]
           },
