@@ -13,11 +13,11 @@ Source for [ai.sil.org](https://ai.sil.org), built with [Docusaurus 2](https://d
 | Path | What it is |
 | --- | --- |
 | `src/pages/` | Site pages (`.mdx`/`.md`/`.js`), e.g. `ethics.mdx`, `contact.mdx`. The file path becomes the URL, e.g. `src/pages/projects/AERO.mdx` → `/projects/AERO` |
-| `src/pages/projects/`, `research/`, `datasets/` | Project, research and dataset pages |
+| `src/pages/projects/`, `src/pages/research/`, `src/pages/datasets/` | Project, research and dataset pages |
 | `src/components/` | React components used by pages |
 | `static/img/` | Images, served from `/img/...` |
 | `docusaurus.config.js` | Site title, navbar, footer and other settings |
-| `docs/`, `blog/` | Leftover Docusaurus template content, not linked from the site |
+| `docs/`, `blog/` | Leftover Docusaurus template content. Still built at `/docs` and `/blog`, but not linked from the navbar |
 
 A new page isn't linked anywhere until you add it to the navbar (or link to it from another page). The navbar links are in `docusaurus.config.js`.
 
