@@ -1,41 +1,47 @@
-# Website
+# SIL AI Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Source for [ai.sil.org](https://ai.sil.org), built with [Docusaurus 2](https://docusaurus.io/) and hosted on [Vercel](https://vercel.com/).
 
-### Installation
+## Getting access
 
-```
-$ yarn
-```
+- **Viewing** — the site is public at https://ai.sil.org.
+- **Editing content** — ask an admin to add you to the [`sil-ai/ai-website`](https://github.com/sil-ai/ai-website) repo with **Write** access. That is all you need to publish changes.
+- **Hosting settings** (domain, build config, deploy logs) — managed in the Vercel project, not GitHub. Ask an admin of the Vercel team to invite you.
 
-### Local Development
+## Where things live
 
-```
-$ yarn start
-```
+| Path | What it is |
+| --- | --- |
+| `src/pages/` | Site pages (`.mdx`/`.md`/`.js`). The file path becomes the URL, e.g. `src/pages/projects/AERO.mdx` → `/projects/AERO` |
+| `src/pages/projects/`, `research/`, `datasets/` | Project, research and dataset pages |
+| `src/components/` | React components used by pages |
+| `static/img/` | Images, served from `/img/...` |
+| `docusaurus.config.js` | Site title, navbar, footer and other settings |
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Local development
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
+Requires Node.js. The project uses npm (`package-lock.json`).
 
 ```
-$ USE_SSH=true yarn deploy
+npm install
+npm start
 ```
 
-Not using SSH:
+This starts a dev server at http://localhost:3000 that reloads as you edit.
+
+To check that the production build works before opening a PR:
 
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+npm run build
+npm run serve
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Making changes and deploying
+
+There is no manual deploy step. Vercel builds the site from GitHub:
+
+1. Create a branch, make your changes, and push it.
+2. Open a pull request against `master`. Vercel posts a **preview URL** on the PR so you can check the result.
+3. Once the PR is merged into `master`, Vercel deploys it to https://ai.sil.org automatically.
+
+Don't use `npm run deploy` / `yarn deploy` — that pushes to GitHub Pages, which this site doesn't use.
