@@ -3,3 +3,7 @@ build/
 node_modules/
 .docusaurus/
 venv
+
+# OS files
+.DS_Store
+Thumbs.db
