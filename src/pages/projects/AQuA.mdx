@@ -2,13 +2,13 @@
 title: AQuA
 ---
 
-import ReactPlayer from 'react-player'
+import VideoPlayer from '@site/src/components/VideoPlayer';
 import MailchimpEmbed from '@site/src/components/MailchimpEmbed';
 
 # AQuA: Augmented Quality Assessment
 
 <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '30px', paddingTop: '40px' }}>
-  <ReactPlayer controls url='https://youtu.be/6MIDtmwJfZM?si=pNqMSr4ozVVKo8Eh' />
+  <VideoPlayer url='https://youtu.be/6MIDtmwJfZM?si=pNqMSr4ozVVKo8Eh' />
 </div>
 
 AQuA is a copilot tool developed by SIL Global that seeks to develop capacity and increase the thoroughness 
@@ -48,15 +48,15 @@ in their draft that otherwise would have likely made their way to print.
   <img src="/img/von-dem-wasser-ngrams.png" alt="Ngrams table for 'von dem Wasser'" style={{ maxWidth: '400px', height: 'auto' }} />
 </div>
 
-<p>
+<div>
   AQuA is currently available via a standalone web application, with plans to integrate into 
   <a href="/projects/scriptureforge" target="_blank"> Scripture Forge</a> and 
   <a href="https://platform.paratext.org/" target="_blank"> platform.bible</a>
-</p>
+</div>
 
-<p>
-  Please fill out this form or email <a href="mailto:idx_aqua@sil.org">idx_aqua@sil.org</a> to request an AQuA account.
-</p>
+<div>
+  Please fill out this form or email [idx_aqua@sil.org](mailto:idx_aqua@sil.org) to request an AQuA account.
+</div>
 
 <MailchimpEmbed src="https://mailchi.mp/820d37d1cf93/aqua-sign-up" height="80vh" />
 
