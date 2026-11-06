@@ -1,0 +1,19 @@
+# Dependabot: security fixes only.
+# Opens a pull request only when a package the site uses has a known
+# security problem AND a fixed version exists. No PRs for ordinary new versions.
+# Needs "Dependabot alerts" and "Dependabot security updates" turned on in the
+# repo's Settings -> Code security (a repo admin must do this).
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    # 0 turns off ordinary version-update PRs; security-fix PRs still open.
+    open-pull-requests-limit: 0
+    groups:
+      # Put several security fixes into one PR instead of one PR each.
+      security-fixes:
+        applies-to: security-updates
+        patterns:
+          - "*"
