@@ -1,11 +1,11 @@
-# Publishes the site to Cloudflare Pages.
+# Publishes the site to Cloudflare (Workers static assets; config in wrangler.jsonc).
 # - Merge to master: updates the live Cloudflare copy.
 # - Pull request: publishes a preview copy and posts its link on the PR.
 # Needs two repo secrets (Settings -> Secrets and variables -> Actions):
-#   CLOUDFLARE_API_TOKEN  (Cloudflare token with "Cloudflare Pages: Edit")
+#   CLOUDFLARE_API_TOKEN  (Cloudflare token with "Workers Scripts: Edit")
 #   CLOUDFLARE_ACCOUNT_ID
 # Until both are set, this workflow skips itself instead of failing.
-name: Cloudflare Pages
+name: Cloudflare
 
 on:
   push:
@@ -17,7 +17,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: cloudflare-pages-${{ github.ref }}
+  group: cloudflare-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -51,19 +51,28 @@ jobs:
           npm ci
           npm run build
 
-      - name: Publish to Cloudflare Pages
-        id: deploy
-        if: steps.check.outputs.ready == 'true'
+      - name: Publish the live Cloudflare copy (master only)
+        if: steps.check.outputs.ready == 'true' && github.event_name == 'push'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy build --project-name=ai-sil-org --branch=${{ github.head_ref || github.ref_name }}
+          command: deploy
+
+      - name: Publish a preview copy (pull requests)
+        id: preview
+        if: steps.check.outputs.ready == 'true' && github.event_name == 'pull_request'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: versions upload --preview-alias pr-${{ github.event.pull_request.number }}
 
       - name: Post the preview link on the pull request
         if: steps.check.outputs.ready == 'true' && github.event_name == 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
-          URL: ${{ steps.deploy.outputs.deployment-url }}
+          OUTPUT: ${{ steps.preview.outputs.command-output }}
         run: |
-          gh pr comment ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --body "Cloudflare Pages preview: $URL"
+          URL=$(echo "$OUTPUT" | grep -oE 'https://pr-[a-z0-9-]+\.[a-z0-9.-]+\.workers\.dev' | head -1)
+          gh pr comment ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --body "Cloudflare preview: $URL"
