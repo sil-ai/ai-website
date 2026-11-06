@@ -1,0 +1,4 @@
+# Cloudflare Pages security headers (same as vercel.json).
+/*
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: frame-ancestors 'self'
