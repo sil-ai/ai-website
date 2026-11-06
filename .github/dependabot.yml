@@ -1,25 +1,19 @@
-# Dependabot: opens pull requests to keep npm packages up to date.
-# Each PR gets a Vercel preview link to check before merging.
+# Dependabot: security fixes only.
+# Opens a pull request only when a package the site uses has a known
+# security problem AND a fixed version exists. No PRs for ordinary new versions.
+# Needs "Dependabot alerts" and "Dependabot security updates" turned on in the
+# repo's Settings -> Code security (a repo admin must do this).
 version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "monthly"
-    open-pull-requests-limit: 5
+    # 0 turns off ordinary version-update PRs; security-fix PRs still open.
+    open-pull-requests-limit: 0
     groups:
-      # Docusaurus packages must stay on the same version, so update them together.
-      docusaurus:
+      # Put several security fixes into one PR instead of one PR each.
+      security-fixes:
+        applies-to: security-updates
         patterns:
-          - "@docusaurus/*"
-      # Everything else: small (minor and patch) updates in one PR.
-      minor-and-patch:
-        update-types:
-          - "minor"
-          - "patch"
-    ignore:
-      # React 19 needs Docusaurus support first; upgrade on purpose, not automatically.
-      - dependency-name: "react"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "react-dom"
-        update-types: ["version-update:semver-major"]
+          - "*"
