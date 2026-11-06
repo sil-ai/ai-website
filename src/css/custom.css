@@ -236,3 +236,11 @@ h3 {
   transform: scale(1.05); /* Slight zoom effect */
   border-color: var(--ifm-color-primary); /* Set border color */
 }
+
+/* MDX 3 (Docusaurus 3) wraps the text of hand-written <li> items in a <p>;
+   MDX 1 did not. Drop that paragraph's bottom margin so these lists keep the
+   spacing they had before the upgrade. */
+main li > p:only-child,
+main li > p:has(+ .primary-dark) {
+  margin-bottom: 0;
+}
