@@ -1,0 +1,25 @@
+# Dependabot: opens pull requests to keep npm packages up to date.
+# Each PR gets a Vercel preview link to check before merging.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    groups:
+      # Docusaurus packages must stay on the same version, so update them together.
+      docusaurus:
+        patterns:
+          - "@docusaurus/*"
+      # Everything else: small (minor and patch) updates in one PR.
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+    ignore:
+      # React 19 needs Docusaurus support first; upgrade on purpose, not automatically.
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
